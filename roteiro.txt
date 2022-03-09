@@ -1,11 +1,11 @@
-- Introdução:
+- Introdução: OK
  Falar sobre diodos, a fabricação e a física de semicondutores que permite a exploração em sensores de imagem
 
-- Tipos de sensores de imagem:
+- Tipos de sensores de imagem: 
  Falar sobre as principais características de sensores CMOS, CCD e outros tipos. Citando suas datas de invenção, princípio de funcionamento, vantagens e desvantagens.
 
 - Simulação de um sensor CMOS simplificado:
- Apresentar simulação de um sensor CMOS no LTSpice, aprofundando sobre as características elétricas, apresentação dos timings, a amplificação e etc.
+ Apresentar simulação de um sensor CMOS no LTSpice, aprofundando sobre as características elétricas, apresentação dos timings, a amplificação e etc. falar sobre a decisão da tensão reversa de polarização e a capacitância 
 
 - Projeto de um sensor CMOS simplificado:
  Falar sobre o processo de construção de um sensor CMOS simplificdao (matriz 10x10). E o hardware periférico para o processamento. Apresentar fotos e processo no Kicad

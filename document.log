@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.3.7)  8 MAR 2022 21:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.3.7)  8 MAR 2022 22:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -323,17 +323,31 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [1{C:/Users/assis/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
 
- <./imagens/diodo_polarizado_reversamente.jpg>] [2
+ <./imagens/diodo_polarizado_reversamente.jpg>]
+<imagens/passive_vs_active.png, id=11, 717.68124pt x 922.44624pt>
+File: imagens/passive_vs_active.png Graphic file (type png)
+<use imagens/passive_vs_active.png>
+Package pdftex.def Info: imagens/passive_vs_active.png  used on input line 51.
+(pdftex.def)             Requested size: 265.5379pt x 341.29976pt.
+
+Overfull \hbox (14.46309pt too wide) in paragraph at lines 51--52
+ [][] 
+ []
+
+
+Underfull \vbox (badness 1281) has occurred while \output is active []
+
+ [2 <./imagens/passive_vs_active.png>] [3
 
 ] (document.aux) ) 
 Here is how much of TeX's memory you used:
- 4918 strings out of 478659
- 79469 string characters out of 2845921
+ 4928 strings out of 478659
+ 79718 string characters out of 2845921
  394469 words of memory out of 3000000
- 22941 multiletter control sequences out of 15000+600000
- 431427 words of font info for 71 fonts, out of 8000000 for 9000
+ 22948 multiletter control sequences out of 15000+600000
+ 434230 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,8n,67p,650b,245s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,8n,67p,784b,245s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/assis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips
 /base/8r.enc}<C:/Users/assis/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
 msfonts/cm/cmmi12.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fonts/type1
@@ -341,9 +355,9 @@ msfonts/cm/cmmi12.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fonts/type1
 ts/type1/urw/times/utmb8a.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fon
 ts/type1/urw/times/utmr8a.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fon
 ts/type1/urw/times/utmri8a.pfb>
-Output written on document.pdf (2 pages, 118781 bytes).
+Output written on document.pdf (3 pages, 143136 bytes).
 PDF statistics:
- 36 PDF objects out of 1000 (max. 8388607)
+ 41 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
