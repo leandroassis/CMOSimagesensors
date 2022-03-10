@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.3.7)  10 MAR 2022 15:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.3.7)  10 MAR 2022 15:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -527,33 +527,33 @@ s been already used, duplicate ignored
 l.109 	
         <./imagens/cmos_3t.jpg>]
 LaTeX Font Info:    Trying to load font information for T1+pcr on input line 12
-0.
+2.
 
 (C:\Users\assis\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Underfull \hbox (badness 4792) in paragraph at lines 120--121
+Underfull \hbox (badness 4792) in paragraph at lines 122--123
 []\T1/ptm/m/n/10 Spectral Ins-tru-ments, Inc. What is a CCD?, Dis-po-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--121
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
 \T1/ptm/m/n/10 ní-vel em: []$\T1/pcr/m/n/10 https : / / specinstcameras . com /
 
  []
 
 
-Underfull \hbox (badness 7291) in paragraph at lines 126--127
+Underfull \hbox (badness 7291) in paragraph at lines 128--129
 []\T1/ptm/m/n/10 ACTIVE-pixel sen-sor. In:WIKIPÉDIA: a en-ci-clo-pé-dia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
 \T1/pcr/m/n/10 wikipedia . org / wiki / Active-[]pixel _ sensor$[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
 \T1/pcr/m/n/10 cern . ch / lecture _ activepixelsensors . html$[]\T1/ptm/m/n/10
  .
  []
@@ -563,16 +563,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ColorRec
 ognition}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.141 \end{document}
+l.143 \end{document}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ColorRec
 ognition}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.141 \end{document}
-                    
-
-] (document.aux)
+l.143 \end{document}
+                    ] (document.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -597,7 +595,7 @@ s/type1/urw/courier/ucrr8a.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fo
 nts/type1/urw/times/utmb8a.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fo
 nts/type1/urw/times/utmr8a.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fo
 nts/type1/urw/times/utmri8a.pfb>
-Output written on document.pdf (4 pages, 338172 bytes).
+Output written on document.pdf (4 pages, 339156 bytes).
 PDF statistics:
  111 PDF objects out of 1000 (max. 8388607)
  26 named destinations out of 1000 (max. 500000)
