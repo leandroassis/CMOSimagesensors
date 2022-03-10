@@ -20,7 +20,7 @@
 				
 		Os sensores de imagem são feitos de fótodiodos, que é um tipo de diodo construído de forma a possibilitar a utilização da incidência de luz como fator determinante no controle da corrente elétrica, e um ou mais transistores ativos. Ou seja, os fótons incidentes sobre o sensor interagem com o fótodiodo para mover elétrons de forma proporcional ao aumento da intensidade luminosa no cristal, juntamente a isso os transistores atuam de forma programada, como será visto mais a frente, a fim de registrar a imagem,. Os sensores modernos de imagem utilizam da exploração desse efeito fotoelétrico concomitantemente da característica capacitiva que junções pn em polarização reversa (fótodiodos em polarização reversa) possuem. 
 		
-		Em resumo, ao polarizar um diodo reversamente com uma fonte de tensão $V_{R}$ (Figura 1: Diodo polarizado reversamente.), o campo elétrico interno da junção pn que constitui o diodo é reforçado. Por conta disso, a barreira de potencial se fortalece e mais íons (de ambos, aceitadores e doadores) ficam expostos. Devido ao campo induzido pelo terminal negativo da fonte $V_{R}$, as lacunas da região p são atraídas para o extremo do ânodo do diodo, e de forma similar (mas por conta do campo induzido pelo terminal positivo) os elétrons são atraídos para o extremo do cátodo do diodo.
+		Em resumo, ao polarizar um diodo reversamente com uma fonte de tensão $V_{R}$ (Figura 1), o campo elétrico interno da junção pn que constitui o diodo é reforçado. Por conta disso, a barreira de potencial se fortalece e mais íons (de ambos, aceitadores e doadores) ficam expostos. Devido ao campo induzido pelo terminal negativo da fonte $V_{R}$, as lacunas da região p são atraídas para o extremo do ânodo do diodo, e de forma similar (mas por conta do campo induzido pelo terminal positivo) os elétrons são atraídos para o extremo do cátodo do diodo.
 		
 		\begin{figure}[!h]
 			\centering
@@ -29,7 +29,7 @@
 		\end{figure}
 		Em razão da concentração de cargas nos extremos do diodo e do aumento da barreira de potencial, isto é, o aumento da voltagem entre as extremidades da região de depleção, a região de depleção se torna mais larga e podemos pensar nos extremos do diodo como as placas de um capacitor. A junção pn portanto, quando polarizada reversamente, possui capacitância dependente de $V_{R}$.
 		
-		Uma vez que possui-se o fótodiodo funcionando como um capacitor sob uma tensão reversa, o dispositivo se carregará com um dado valor $V_{C}$ que depende do tempo ao qual o fótodiodo (agora agindo como capacitor) ficou alimentado pela tensão reversa $V_{R}$. Com o fótodiodo carregado permite-se a entrada de luz sobre o sensor, que resultará em uma indução de corrente na junção pn e, consequentemente, em uma diminuição na tensão $V_{C}$. A partir da observação individual da tensão $V_{C}$ em uma matriz de fótodiodos é possível fazer a transdução da luz incidente sobre o sensor em uma imagem.		
+		Uma vez que possui-se o fótodiodo funcionando como um capacitor sob uma tensão reversa, o dispositivo se carregará com um dado valor $V_{C}$ que depende do tempo ao qual o fótodiodo (agora agindo como capacitor) ficou alimentado pela tensão reversa $V_{R}$. Com o fótodiodo carregado permite-se a entrada de luz sobre o sensor, que resultará em uma indução de corrente na junção pn e, consequentemente, em uma diminuição na tensão $V_{C}$. A partir da observação individual da tensão $V_{C}$ em uma matriz de fótodiodos é possível fazer a transdução da luz incidente sobre o sensor em uma imagem. O mesmo princípio pode ser utilizado de forma um pouco diferente, deixando a corrente que os fótons induzem no fótodiodo gerar uma tensão - proporcional a capacitância obtida ao polarizar o diodo reversamente - que posteriormente é observada e analisada para gerar a imagem.
 		
 \section*{Tipos de sensores de imagem}
 		Os sensores de imagem podem ser separados em dois principais tipos, eles são os CCDs (\textit{Charge-Couple Device}) e os sensores CMOS, configurações de sensores baseados em APS (\textit{Active Pixel Sensor}), estes podendo ser classificados de acordo com o número de transistores por pixel, como por exemplo 3T-APS, 4T-APS e assim por diante. Ambos os dispositivos são feitos com tecnologia MOS (\textit{Metal Oxide Semiconductor}), com CCDs baseados em capacitores MOS e os sensores CMOS baseados em amplificadores MOSFET. A seguir entra-se em mais detalhes sobre cada tipo de sensor, suas características, histórias, vantagens e desvantagens.
@@ -64,7 +64,14 @@
 		
 	Como apresentado de forma excelente em \cite{Spectral}, o funcionamento dos CCDs pode ser descrito, de forma simplificada, como uma matriz de baldes (pixels) coletando água da chuva (fótons). Os baldes são expostos à chuva pela mesma quantidade de tempo, e consequentemente se enchem com diferentes quantidades de água. A seguir o CCD inicia a leitura de cada balde por vez. Este processo de leitura é feito transferindo a água de cada balde de uma coluna para o balde adjancente em uma coluna vazia ao lado, os baldes nesta coluna anteriormente vazia transferem a água para baixo um de cada vez, onde se encontra um conversor que reconhece e armazena o nível d'água de cada balde.
 	
-	Na prática, como apresentado na Figura 04, os fótodiodos possuem 
+	Na prática, como apresentado na Figura 4, o fótodiodo de cada pixel é exposto aos fótons incidentes sobre o sensor. Devido ao fluxo de fótons sobre o fótodiodo, elétrons são liberados - proprocionalmente a intensidade e cor da luz - e, consequentemente, lacunas são criadas na estrutura cristalina. Esses elétrons ficam concentradas na parte N+ do fótodiodo por conta do potencial positivo conectado, e em seguida são deslocados lateralmente para um ``bloco'' de armazenamento SN. Através do acionamento de um transistor de seleção pela entrada SEL, os elétrons armazenados são conduzidos para a coluna pixel a pixel, de baixo para cima. A carga na coluna mais próxima ao amplificador ($COL_{j}$) é posteriormente deslocada para a saída, que passa pelo estágio de amplificação e conversão A/D, e as cargas de cada pixel (linha) na coluna anterior ($COL_{j-1}$) é deslocada para o pixel de mesma linha em $COL_{j}$. O processo segue em \textit{loop} até que todas as linhas e colunas tenham sido iteradas.
+	
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[scale=0.56]{imagens/passive-pixel.jpg}
+		\caption{\textit{Array} simplificada de um CCD.}
+	\end{figure}
+	
 	
 	\subsection*{Sensores CMOS}
 	Fazer quarta

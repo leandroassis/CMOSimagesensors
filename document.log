@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.3.7)  9 MAR 2022 21:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.3.7)  9 MAR 2022 22:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -480,90 +480,96 @@ File: imagens/ccd.jpg Graphic file (type jpg)
 Package pdftex.def Info: imagens/ccd.jpg  used on input line 61.
 (pdftex.def)             Requested size: 102.78217pt x 79.09409pt.
 [2 <./imagens/passive_vs_active.png> <./imagens/ccd.jpg>]
-Underfull \hbox (badness 2495) in paragraph at lines 81--82
+<imagens/passive-pixel.jpg, id=32, 429.10312pt x 253.69781pt>
+File: imagens/passive-pixel.jpg Graphic file (type jpg)
+<use imagens/passive-pixel.jpg>
+Package pdftex.def Info: imagens/passive-pixel.jpg  used on input line 71.
+(pdftex.def)             Requested size: 240.2961pt x 142.0698pt.
+
+Underfull \hbox (badness 2495) in paragraph at lines 88--89
 \T1/ptm/b/n/10.95 Elec-tro-nics and Elec-tri-cal En-gi-ne-e-ring\T1/ptm/m/n/10.
 95 . DOI:
  []
 
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 84
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 91
 .
 (C:\Users\assis\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Underfull \hbox (badness 1939) in paragraph at lines 87--88
+Underfull \hbox (badness 1939) in paragraph at lines 94--95
 []\T1/ptm/m/n/10.95 IMAGE sen-sor. In:WIKIPÉDIA: a en-ci-clo-pé-dia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
 \T1/pcr/m/n/10.95 en . wikipedia . org / wiki / Image _ sensor$[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--91
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
 []\T1/ptm/m/n/10.95 ACTIVE-pixel sen-sor. In:WIKIPÉDIA: a en-
  []
 
 
-Underfull \hbox (badness 4792) in paragraph at lines 90--91
+Underfull \hbox (badness 4792) in paragraph at lines 97--98
 \T1/ptm/m/n/10.95 ci-clo-pé-dia li-vre. Wi-ki-me-dia, 2006. Dis-po-ní-vel
  []
 
 
-Underfull \hbox (badness 3199) in paragraph at lines 90--91
+Underfull \hbox (badness 3199) in paragraph at lines 97--98
 \T1/ptm/m/n/10.95 em: []$\T1/pcr/m/n/10.95 https : / / en . wikipedia . org / w
 iki /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
 []\T1/ptm/m/n/10.95 Meroli, Ste-fano, De-sign and im-ple-men-ta-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
 \T1/ptm/m/n/10.95 of Ac-tive Pi-xel Sen-sors (APS), Dis-po-ní-vel
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
 \T1/ptm/m/n/10.95 em: []$\T1/pcr/m/n/10.95 https : / / meroli . web . cern . ch
  /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
 \T1/pcr/m/n/10.95 lecture _ activepixelsensors . html$[]\T1/ptm/m/n/10.95 .
  []
 
 
-Underfull \hbox (badness 2894) in paragraph at lines 96--97
+Underfull \hbox (badness 2894) in paragraph at lines 103--104
 []\T1/ptm/m/n/10.95 Computerphile, Cap-tu-ring Di-gi-tal Ima-ges (The
  []
 
 
-Underfull \hbox (badness 2197) in paragraph at lines 96--97
+Underfull \hbox (badness 2197) in paragraph at lines 103--104
 \T1/ptm/m/n/10.95 Bayer Fil-ter) - Com-pu-terphile. You-tube, 2015.
  []
 
 
-Underfull \hbox (badness 7186) in paragraph at lines 99--100
+Underfull \hbox (badness 7186) in paragraph at lines 106--107
 \T1/ptm/m/n/10.95 CCD vs CMOS. You-tube, 2019. Dis-po-ní-vel
  []
 
 
-Underfull \hbox (badness 3199) in paragraph at lines 99--100
+Underfull \hbox (badness 3199) in paragraph at lines 106--107
 \T1/ptm/m/n/10.95 em: []$\T1/pcr/m/n/10.95 https : / / www . youtube . com / wa
 tch ?
  []
 
 
-Underfull \hbox (badness 1721) in paragraph at lines 102--103
+Underfull \hbox (badness 1721) in paragraph at lines 109--110
 []\T1/ptm/m/n/10.95 Hodgins, Sean, I Made My Own Image Sen-
  []
 
 
-Underfull \hbox (badness 2512) in paragraph at lines 102--103
+Underfull \hbox (badness 2512) in paragraph at lines 109--110
 \T1/ptm/m/n/10.95 po-ní-vel em: []$\T1/pcr/m/n/10.95 https : / / www . youtube 
 . com /
  []
@@ -573,14 +579,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ColorRec
 ognition}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.105 \end{document}
+l.112 \end{document}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ColorRec
 ognition}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.105 \end{document}
-                    ] (document.aux)
+l.112 \end{document}
+                     <./imagens/passive-pixel.jpg>] (document.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -588,24 +594,26 @@ Package rerunfilecheck Info: File `document.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 11217 strings out of 478659
- 177481 string characters out of 2845921
- 500847 words of memory out of 3000000
- 29126 multiletter control sequences out of 15000+600000
+ 11225 strings out of 478659
+ 177687 string characters out of 2845921
+ 499847 words of memory out of 3000000
+ 29132 multiletter control sequences out of 15000+600000
  433805 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,8n,63p,784b,347s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,8n,63p,1067b,346s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/assis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:
 /Users/assis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi1
 0.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmmi8.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fonts/type1/urw/cou
-rier/ucrr8a.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fonts/type1/urw/t
-imes/utmb8a.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fonts/type1/urw/t
-imes/utmr8a.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fonts/type1/urw/t
-imes/utmri8a.pfb>
-Output written on document.pdf (3 pages, 178297 bytes).
+/cm/cmmi8.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmr8.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmsy8.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/font
+s/type1/urw/courier/ucrr8a.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fo
+nts/type1/urw/times/utmb8a.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fo
+nts/type1/urw/times/utmr8a.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fo
+nts/type1/urw/times/utmri8a.pfb>
+Output written on document.pdf (3 pages, 244129 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
- 24 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 106 PDF objects out of 1000 (max. 8388607)
+ 25 named destinations out of 1000 (max. 500000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
