@@ -2,7 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{times}
-\usepackage[left=1.2cm,top=1.8cm,right=1.2cm,bottom=2cm]{geometry}
+\usepackage[left=1cm,top=1.5cm,right=1cm,bottom=1.5cm]{geometry}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{makeidx}
@@ -38,15 +38,17 @@
 	\subsection*{A história dos sensores de imagem}
 		Os sensores CCDs são pioneiros no ramo de imagem digital e sua origem remonta às pesquisas com tecnologia MOS de Willard Boyle e George E. Smith. Durante a pesquisa descobriram que uma carga elétrica poderia ser armazenada em pequenos capacitores MOS, descoberta essa que se tornou a base para o sensor CCD, inventado em 1969.
 		
-		Apenas em 1980 surgiu um fator chave para os sensores CMOS modernos, o fótodiodo ``fixado'' (do inglês PPD - Pinned PhotoDiode) inventado por Nobukazu Teranishi, Hiromitsu Shiraki e Yasuo Ishihara. O diferencial desse componente em relação aos demais é o baixo \textit{lag}, baixo ruído, alta eficiência quântica (taxa de conversão de fótons em elétrons) e baixa corrente quando aplicado a pouca luminosidade. A partir de 1987, os PPDs começaram a ser incorporados na maioria dos sensores CCDs, e desde então são usados em todos os sensores CCD e CMOS.
+		Os CCDs fabricados na época sofriam de distorções causadas pelo atraso do obturador das câmeras. Distorções que foram resolvidade apenas em 1980 quando surgiu um dispositivo que viria a ser o fator chave para os sensores CMOS modernos, o fótodiodo ``fixado'' (do inglês PPD - Pinned PhotoDiode) inventado por Nobukazu Teranishi, Hiromitsu Shiraki e Yasuo Ishihara. O diferencial desse componente em relação aos demais é o baixo \textit{lag}, baixo ruído, alta eficiência quântica (taxa de conversão de fótons em elétrons) e baixa corrente quando aplicado a pouca luminosidade. A partir de 1987, os PPDs começaram a ser incorporados na maioria dos sensores CCDs, e desde então são usados em todos os sensores CCD e CMOS.
+		
+		A tecnologia base para os pixels de sensores CMOS foi inventada pela Olympus em meados dos anos 80. Essa tecnologia foi possibilitada pelos avanços na tecnologia de fabricação de semicondutores MOS, com MOSFETs atingindo escalas de microns e submicrons de tamanho. O primeiro sensor ``parente'' dos sensores CMOS foi fabricado por Tsutomu Nakamura e sua equipe em 1985 utilizando transistores NMOS. Posteriormente, os sensores CMOS como conhecido hoje foi desenvolvido por Eric Fossum e sua equipe nos laboratórios da NASA em 1993.
 	
-		Apesar dos sensores CCDs terem sido pioneiros no ramo de medição científica nos anos 80 e se tornado o sensor de escolha para praticamente toda aplicação de imagens nesta época, o desenvolvimento de sensores CMOS atingiu um ponto em que começou a substituir os sensores CCDs em aplicações de baixa performance. Com o passar do tempo os sensores de tecnologia CMOS se expandiram, enquanto os de tecnologia CCD estagnaram. De forma geral, ambos os dispositivos são utilizados de acordo com a necessidade da aplicação.
+		Apesar dos sensores CCDs terem sido pioneiros no ramo de medição científica nos anos 80 e se tornado o sensor de escolha para praticamente toda aplicação de imagens nesta época, o desenvolvimento de sensores CMOS atingiu um ponto em que começou a substituir os sensores CCDs a partir de 2007. Com o passar do tempo os sensores de tecnologia CMOS se expandiram mais ainda enquanto os de tecnologia CCD estagnaram, resultando na substituição praticamente completa dos CCDs por sensores CMOS na maioria das aplicações em 2010. De forma geral ainda hoje ambos os dispositivos são utilizados de acordo com a necessidade da aplicação.
 		
 	\subsubsection*{Sensores de Pixel Passivo - PPS} 
 		Os precursores dos sensores APS foram os PPS (do inglês, passive-pixel sensor), um tipo de matriz de pixels formada por fótodiodos e uma chave MOSFET, que consiste em ``pixels passivos'' sem amplificação, ou seja, essa configuração de pixel transfere diretamente o sinal acumulado para fora do pixel. Nesses sensores cada pixel possui uma junção pn, capacitor integrado e transistores de seleção. Essa configuração de pixels passivos foi proposta por G. Weckler em 1968 e antecedeu a criação dos CCDs. Os PPS sofrem de diversas limitações como alto ruído, baixo tempo de leitura e dificuldade de escalabilidade. De forma geral, os sensores CCDs possuem matrizes de pixels passivos.
 		
 	\subsubsection*{Sensores de Pixel Ativos - APS}
-		Esses sensores consistem de ``pixels ativos'', que consiste em um ou mais amplificadores MOSFET que convertem a carga fótogerada em uma tensão, amplifica o sinal de tensão e reduz o ruido. Esse conceito de pixel foi proposto por Peter Noble em 1968, entretanto esta topologia de pixels só foi fabricada a partir de 1985 devido as evoluções nos processos de fabricação dos transistores MOS.  Os sensores CMOS utilizam dessa configuração de pixels para seu funcionamento, tendo como principal diferença o uso de transistores CMOS ao invés de transistores PMOS ou NMOS.
+		Esses sensores consistem de ``pixels ativos'', que consiste em um ou mais amplificadores MOSFET que convertem a carga fótogerada em uma tensão, amplifica o sinal de tensão e reduz o ruido. Esse conceito de pixel foi proposto por Peter Noble em 1968, entretanto, como dito anteriormente, esta topologia de pixels só foi fabricada a partir de 1985 devido as evoluções nos processos de fabricação dos transistores MOS.  Os sensores CMOS utilizam dessa configuração de pixels para seu funcionamento, tendo como principal diferença o uso de transistores CMOS ao invés de transistores PMOS ou NMOS.
 	
 	\begin{figure}[!h]
 		\centering
@@ -67,15 +69,15 @@
 	
 	Na prática, como apresentado na Figura 4, o fótodiodo polarizado reversamente de cada pixel é exposto aos fótons incidentes sobre o sensor. Devido ao fluxo de fótons sobre o fótodiodo, elétrons são liberados - proprocionalmente a intensidade e cor da luz - e, consequentemente, lacunas são criadas na estrutura cristalina. Ou seja, há um fluxo de corrente induzido no fótodiodo agindo como capacitor. Inicialmente, esses elétrons ficam desprendidos na camada de depleção, mas posteriormente são concentrados na parte N+ do fótodiodo por conta do potencial positivo que é induzido nesta parte apenas durante a leitura.
 	
+	\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.56]{imagens/passive-pixel.jpg}
+	\caption{\textit{Array} simplificada de um CCD.}
+	\end{figure}
+	
 	Através do acionamento do transistor de seleção pela entrada SEL as cargas na coluna mais próxima ao amplificador ($COL_{j}$) são deslocadas para um registrador de deslocamento, que será responsável por transferir a carga de um pixel da coluna por vez ao amplificador. Devido ao acionamento do transistor de seleção - que age como o \textit{gate} descrito anteriormente-, após as cargas da coluna serem transferidas para a saída, as cargas nas coluna anteriores ($COL_{j-1}$, $COL_{j-2}$, e assim por diante) são deslocadas para as colunas posteriores ($COL_{j}$, $COL_{j-1}$, e assim por diante). O processo segue em \textit{loop} até que todas as linhas e colunas tenham sido iteradas. A leitura das cargas no CCD pode ser feita de forma mais rápida ao construir o CCD com amplificadores em cada vértice da matriz de pixels, e adicionar registradores de deslocamento em cada aresta.
 	
 	Após o processo, afim de preparar os pixels do CCD para uma nova leitura, o transistor de \textit{reset} é acionado pela entrada RST, e todos os \textit{gates} são levados à nivel lógico alto - entrada SEL acionada para todas os pixels - por um período de tempo, fazendo com que os fótodiodos de cada pixel voltem para o estado inicial e fiquem prontos para um novo processo.
-
-	\begin{figure}[H]
-		\centering
-		\includegraphics[scale=0.56]{imagens/passive-pixel.jpg}
-		\caption{\textit{Array} simplificada de um CCD.}
-	\end{figure}
 	
 	\subsection*{Sensores CMOS}
 	Assim  como os CCDs, os sensores CMOS são dispositivos capazes de transdutar os fótons incidentes em energias elétricas. A partir de 2010 esses sensores substituíram grande parte se não todos os CCDs, por conta das vantagens que este dispositivo tem sobre os CCD. Os sensores CMOS também são constituídos de matrizes de pixels feitos em uma placa de silício. A grande diferença na arquitetura desses dispostivos é que utilizar a configuração APS - ao invés da PPS, como os CCDs -, ou seja, possuem amplificação interna em cada pixel. A seguir, na figura 5, é apresentado um pixel simplificado de um sensor CMOS-3T (3T é devido aos 3 transistores presentes no pixel).
@@ -83,7 +85,7 @@
 	\begin{figure}[!h]
 		\centering
 		\includegraphics[scale=0.12]{imagens/cmos_3t.jpg}
-		\caption{\textit{Pixel} CMOS 3T.}
+		\caption{Pixel CMOS 3T.}
 	\end{figure}
 	
 	O princípio de funcionamento dos sensores CMOS é de certa forma mais simples que os CCDs. O fótodiodo polarizado reversamente que funciona como um capacitor armazena a tensão $V_{RST}$ ao acionar o transistor MOSFET $M_{rst}$ através da adição de nível HIGH na entrada RESET durante o intervalo de \textit{reset}. Ao levar o nível da entrada RESET para LOW, o fótodiodo é deixado flutuando e os fótons incidentes sobre a junção pn induzem uma corrente que descarrega a tensão armazenada e, consequentemente, altera a tensão no \textit{gate} do transistor $M_{sf}$, que atua como amplificador \textit{source follower}, resultando em uma variação na tensão -submúltiplo de $V_{DD}$ proporcional a tensão no gate do MOSFET- que chega ao transistor de seleção $M_{sel}$. O período de tempo após desligar o transistor $M_{rst}$, onde é analisada a flutuação de tensão no fótodiodo, é chamado tempo de integração.
@@ -95,17 +97,21 @@
 	Outras funções como linhas compartilhadas, 4 e 8 caminhos compartilhados para a leitura mais rápida, aumento da densidade de pixels, ou correção de distorções como \textit{rolling shutter} podem ser adicionadas ao aumentar o número de transistores e/ou empregar outras arquiteturas, adicionando componentes como capacitores.
 	
 	\subsection*{CCD vs. CMOS}
-	É possível comparar a eficiência desses dois tipos de sensores ao comparar alguns parâmetros como integração de sistemas, 
+	É possível comparar a eficiência desses dois tipos de sensores ao comparar alguns parâmetros como integração de sistemas, consumo energético, tamanho do circuito integrado, velocidade de processamento, ruído e sensibilidade, e distorção de imagens.
 	
-	Por conta do uso de PPS (\textit{Passsive Pixels Sesores}), não é possível integrar dispositivos como \textit{timers} e conversores A/D diretamente na matriz de pixels, sendo nessário adicionar \textit{chips} periféricos para realizar essas funções, o que resulta em um tamanho maior para os circuitos integrados CCDs.
+	Por conta do uso de PPS (\textit{Passsive Pixels Sesores}), não é possível integrar dispositivos como \textit{timers} e conversores A/D diretamente na matriz de pixels, sendo nessário adicionar \textit{chips} periféricos para realizar essas funções, o que resulta em um tamanho maior para os circuitos integrados CCDs. Já nos sensores CMOS, devido ao processo de fabricação similar aos de circuitos interados, é possível criar o denominado ``\textit{Camere on Chip}'', com todos os periféricos integrados diretamente no \textit{chipset}, resultando em um circuito integrado compacto.
+	
+	Em relação ao consumo de energia, os CCDs necessitam de diferentes tipos de tensões de alimentação para os diferentes tempos de \textit{clock}, requerindo tensões típicas no \textit{range} de 7 à 10 V, enquanto os sensores CMOS trabalham com tensão mais baixas de 3.3 V à 5 V. Resultando em um consumo de potência menor em sensores CMOS, o que faz prevalecer esses sensores em aplicações que consumo baixo é essencial como circuitos embarcados em celulares.
+	
+	Comparando a velocidade de processamento, os CCDs utilizam de um processo de deslocamento para o estágio de amplificação e análise como descrito anteriormente. A performance desse deslocamento pode ser melhorada ao adicionar mais registradores de deslocamento no sensor, em troca de aumentar a quantidade de hardware e o tamanho do circuito integrado. Já nos CMOS, a amplificação é feita nos próprios pixels da matriz resultando em uma leitura mais rápida, que pode ser aumentada ainda mais ao utilizar processamento paralelo e analisar múltiplas colunas ao mesmo tempo.
+	
+	Para última comparação, faz-se a análise do ruído e sensitividade atrelada a cada sensor. Na teoria, como os sensores CMOS possuem pixels que integram amplificação e circuitos de transformação carga-voltagem (fótodiodo), o fator de preenchimento (\textit{Fill Factor}) destes dispositivos acaba sendo menor em comparação aos CCDs, e por conta disso a sensibilidade de sensores CMOS é menor que de CCDs. Além disso os amplificadores utilizados em cada pixel dos sensores CMOS não são idênticos entre si devido à incertezas atreladas ao processo de fabricação de cada MOSFET, por conta disso os fatores de amplificação de cada pixel não são uniformes, resultando em um ruído adicional. Entretanto, na prática, devido à evolução da tecnologia envolvida na fabricação de sensores CMOS, a sensibilidade e ruído de sensores CMOS estão praticamente iguais à dos CCDs.
+	
 
-	\section*{Simulação de um sensor CMOS simplificado}
+	\section*{Conclusão: Simulação de um sensor CMOS 3T simplificado}
 	Fazer quinta	
 	To do: Focar em uma análise mais quantiativa, com equações e etc
 	
-	\section{Extra: Cores em imagens}
-	fazer quinta
-
 	\begin{thebibliography}{99}
 		\bibitem[1]{MazinSaad2019}
 		{Mazin H.; Saad D. {Design and simulation of a CMOS image sensor with a built-in edge detection for tactile vision sensory substituition}, \textbf{AIMS Electronics and Electrical Engineering}. DOI: 10.3924/ElectrEng.2019.2.144, 06 May 2019.}

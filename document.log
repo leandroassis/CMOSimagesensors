@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.3.7)  10 MAR 2022 14:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.3.7)  10 MAR 2022 15:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -369,15 +369,15 @@ LaTeX Font Info:    ... okay on input line 16.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(34.14322pt, 529.22144pt, 34.14322pt)
-* v-part:(T,H,B)=(51.21504pt, 736.9263pt, 56.9055pt)
+* h-part:(L,W,R)=(28.45274pt, 540.60239pt, 28.45274pt)
+* v-part:(T,H,B)=(42.67912pt, 759.6886pt, 42.67912pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=529.22144pt
-* \textheight=736.9263pt
-* \oddsidemargin=-38.12677pt
-* \evensidemargin=-38.12677pt
-* \topmargin=-58.05495pt
+* \textwidth=540.60239pt
+* \textheight=759.6886pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
+* \topmargin=-66.59087pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -462,7 +462,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 18.
 (C:\Users\assis\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<imagens/diodo_polarizado_reversamente.jpg, id=7, 504.38437pt x 323.70938pt>
+<imagens/diodo_polarizado_reversamente.jpg, id=3, 504.38437pt x 323.70938pt>
 File: imagens/diodo_polarizado_reversamente.jpg Graphic file (type jpg)
 <use imagens/diodo_polarizado_reversamente.jpg>
 Package pdftex.def Info: imagens/diodo_polarizado_reversamente.jpg  used on inp
@@ -477,30 +477,23 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.47 		
+l.46 		
         <./imagens/diodo_polarizado_reversamente.jpg>]
-<imagens/passive_vs_active.png, id=22, 717.68124pt x 922.44624pt>
+<imagens/passive_vs_active.png, id=18, 717.68124pt x 922.44624pt>
 File: imagens/passive_vs_active.png Graphic file (type png)
 <use imagens/passive_vs_active.png>
-Package pdftex.def Info: imagens/passive_vs_active.png  used on input line 53.
+Package pdftex.def Info: imagens/passive_vs_active.png  used on input line 55.
 (pdftex.def)             Requested size: 172.24701pt x 221.39162pt.
-<imagens/ccd.jpg, id=23, 497.86pt x 259.97125pt>
+<imagens/ccd.jpg, id=19, 497.86pt x 259.97125pt>
 File: imagens/ccd.jpg Graphic file (type jpg)
 <use imagens/ccd.jpg>
-Package pdftex.def Info: imagens/ccd.jpg  used on input line 62.
+Package pdftex.def Info: imagens/ccd.jpg  used on input line 64.
 (pdftex.def)             Requested size: 248.92938pt x 129.9853pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<imagens/passive-pixel.jpg, id=25, 429.10312pt x 253.69781pt>
+<imagens/passive-pixel.jpg, id=21, 429.10312pt x 253.69781pt>
 File: imagens/passive-pixel.jpg Graphic file (type jpg)
 <use imagens/passive-pixel.jpg>
-Package pdftex.def Info: imagens/passive-pixel.jpg  used on input line 76.
+Package pdftex.def Info: imagens/passive-pixel.jpg  used on input line 74.
 (pdftex.def)             Requested size: 240.2961pt x 142.0698pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [2
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
@@ -513,107 +506,56 @@ s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.79 	
-       <./imagens/passive_vs_active.png> <./imagens/ccd.jpg>]
-<imagens/cmos_3t.jpg, id=39, 1007.4pt x 1362.2895pt>
-File: imagens/cmos_3t.jpg Graphic file (type jpg)
-<use imagens/cmos_3t.jpg>
-Package pdftex.def Info: imagens/cmos_3t.jpg  used on input line 85.
-(pdftex.def)             Requested size: 120.88278pt x 163.46768pt.
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 11
-4.
-
-(C:\Users\assis\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-Underfull \hbox (badness 6477) in paragraph at lines 114--115
-[]\T1/ptm/m/n/10 Spectral Ins-tru-ments, Inc. What is a CCD?, Dis-
- []
-
-
-Underfull \hbox (badness 8132) in paragraph at lines 114--115
-\T1/ptm/m/n/10 po-ní-vel em: []$\T1/pcr/m/n/10 https : / / specinstcameras . co
-m /
- []
-
-[3
+      
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.115 		
-        
+l.79 	
+       <./imagens/passive_vs_active.png> <./imagens/ccd.jpg> <./imagens/passive
+-pixel.jpg>]
+<imagens/cmos_3t.jpg, id=34, 1007.4pt x 1362.2895pt>
+File: imagens/cmos_3t.jpg Graphic file (type jpg)
+<use imagens/cmos_3t.jpg>
+Package pdftex.def Info: imagens/cmos_3t.jpg  used on input line 87.
+(pdftex.def)             Requested size: 120.88278pt x 163.46768pt.
+ [3
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.115 		
-         <./imagens/passive-pixel.jpg> <./imagens/cmos_3t.jpg>]
-Underfull \hbox (badness 3019) in paragraph at lines 117--118
-[]\T1/ptm/m/n/10 IMAGE sen-sor. In:WIKIPÉDIA: a en-ci-clo-pé-dia li-vre.
- []
+l.109 	
+        <./imagens/cmos_3t.jpg>]
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 12
+0.
 
-
-Underfull \hbox (badness 7740) in paragraph at lines 117--118
-\T1/ptm/m/n/10 Wi-ki-me-dia, 2006. Dis-po-ní-vel em: []$\T1/pcr/m/n/10 https : 
-/ / en .
- []
-
-
-Underfull \hbox (badness 3364) in paragraph at lines 120--121
-[]\T1/ptm/m/n/10 ACTIVE-pixel sen-sor. In:WIKIPÉDIA: a en-ci-clo-pé-dia
+(C:\Users\assis\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Underfull \hbox (badness 4792) in paragraph at lines 120--121
+[]\T1/ptm/m/n/10 Spectral Ins-tru-ments, Inc. What is a CCD?, Dis-po-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 120--121
-\T1/pcr/m/n/10 wikipedia . org / wiki / Active-[]pixel _ sensor$[]
+\T1/ptm/m/n/10 ní-vel em: []$\T1/pcr/m/n/10 https : / / specinstcameras . com /
+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 123--124
-[]\T1/ptm/m/n/10 Meroli, Ste-fano, De-sign and im-ple-men-ta-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 123--124
-\T1/ptm/m/n/10 of Ac-tive Pi-xel Sen-sors (APS), Dis-po-ní-vel em:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 123--124
-[]$\T1/pcr/m/n/10 https : / / meroli . web . cern . ch / lecture _
- []
-
-
-Underfull \hbox (badness 1248) in paragraph at lines 123--124
-\T1/pcr/m/n/10 activepixelsensors . html$[]\T1/ptm/m/n/10 . Acesso em: 07 mar
- []
-
-
-Underfull \hbox (badness 2662) in paragraph at lines 126--127
-[]\T1/ptm/m/n/10 Computerphile, Cap-tu-ring Di-gi-tal Ima-ges (The Bayer
- []
-
-
-Underfull \hbox (badness 7047) in paragraph at lines 126--127
-\T1/ptm/m/n/10 Fil-ter) - Com-pu-terphile. You-tube, 2015. Dis-po-ní-vel
+Underfull \hbox (badness 7291) in paragraph at lines 126--127
+[]\T1/ptm/m/n/10 ACTIVE-pixel sen-sor. In:WIKIPÉDIA: a en-ci-clo-pé-dia
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 126--127
-\T1/ptm/m/n/10 em: []$\T1/pcr/m/n/10 https : / / www . youtube . com / watch ? 
-v =
+\T1/pcr/m/n/10 wikipedia . org / wiki / Active-[]pixel _ sensor$[]
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 129--130
-\T1/pcr/m/n/10 youtube . com / watch ? v = FKJFIzDfUNE & t = 421s$[]\T1/ptm/m/n
-/10 .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
-\T1/pcr/m/n/10 / / www . youtube . com / watch ? v = PaXweP73NT4$[]\T1/ptm/m/n/
-10 .
+\T1/pcr/m/n/10 cern . ch / lecture _ activepixelsensors . html$[]\T1/ptm/m/n/10
+ .
  []
 
 [4
@@ -621,13 +563,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ColorRec
 ognition}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.135 \end{document}
+l.141 \end{document}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ColorRec
 ognition}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.135 \end{document}
+l.141 \end{document}
                     
 
 ] (document.aux)
@@ -635,16 +577,16 @@ l.135 \end{document}
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: E97233D6028716FB45737AF9E686AEB6;167.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 11317 strings out of 478659
- 179125 string characters out of 2845921
- 506183 words of memory out of 3000000
- 29215 multiletter control sequences out of 15000+600000
+ 11312 strings out of 478659
+ 179091 string characters out of 2845921
+ 507167 words of memory out of 3000000
+ 29211 multiletter control sequences out of 15000+600000
  433950 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,8n,63p,977b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,8n,63p,977b,344s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/assis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:
 /Users/assis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi1
 0.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
@@ -655,9 +597,9 @@ s/type1/urw/courier/ucrr8a.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fo
 nts/type1/urw/times/utmb8a.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fo
 nts/type1/urw/times/utmr8a.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fo
 nts/type1/urw/times/utmri8a.pfb>
-Output written on document.pdf (4 pages, 335592 bytes).
+Output written on document.pdf (4 pages, 338172 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
- 27 named destinations out of 1000 (max. 500000)
- 34 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 111 PDF objects out of 1000 (max. 8388607)
+ 26 named destinations out of 1000 (max. 500000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
