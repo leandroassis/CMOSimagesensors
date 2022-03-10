@@ -8,6 +8,7 @@
 \usepackage{makeidx}
 \usepackage{graphicx}
 \usepackage{hyperref}
+\usepackage{float}
 \usepackage[portuguese]{babel}
 \title{\textbf{Diodos aplicados à sensores digitais de imagem}}
 \author{Leandro Assis dos Santos}
@@ -47,24 +48,30 @@
 	\subsubsection*{Sensores de Pixel Ativos - APS}
 		Esses sensores consistem de ``pixels ativos'', que consiste em um ou mais amplificadores MOSFET que convertem a carga fótogerada em uma tensão, amplifica o sinal de tensão e reduz o ruido. Esse conceito de pixel foi proposto por Peter Noble em 1968, entretanto esta topologia de pixels só foi fabricada a partir de 1985 devido as evoluções nos processos de fabricação dos transistores MOS.  Os sensores CMOS utilizam dessa configuração de pixels para seu funcionamento, tendo como principal diferença o uso de transistores CMOS ao invés de transistores PMOS ou NMOS.
 	
-	\begin{figure}[!ht]
+	\begin{figure}[H]
 		\centering
-		\includegraphics[scale=0.26]{imagens/passive_vs_active.png}
+		\includegraphics[scale=0.24]{imagens/passive_vs_active.png}
 		\caption{Apresentação das configurações de PPS (a) e APS (b).}
 	\end{figure}
 	
 	\subsection*{Sensores CCD}
-	Como dito anteriormente, os CCDs são circuitos integrados formado por pixels feitos de silício. Esses pixel dispostos em colunas possuem um \textit{gate} responsável por controlar o deslocamento e armazenamento de cargas através da tensão, a Figura 3 apresenta a transição de cargas de pixels de colunas adjacentes feito ao comutar o gate da coluna de destino para HIGH e da coluna de partida para LOW de forma gradativa.
-	
-	\begin{figure}[!ht]
+	\begin{figure}[H]
 		\centering
-		\includegraphics[scale=0.52]{imagens/ccd.jpg}
+		\includegraphics[scale=0.5]{imagens/ccd_sensor.jpg}
+		\caption{Circuito integrado CCD.}
+	\end{figure}
+	
+	Como dito anteriormente, os CCDs são circuitos integrados formado por pixels em matriz feitos de silício, registradores de deslocamento analógicos e amplificadores. Esses pixel dispostos em colunas possuem um \textit{gate} responsável por controlar o deslocamento e armazenamento de cargas através da tensão, a Figura 4 apresenta a transição de cargas de pixels de colunas adjacentes feito ao comutar o gate da coluna de destino para HIGH e da coluna de partida para LOW de forma gradativa.
+	
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[scale=0.5]{imagens/ccd.jpg}
 		\caption{Fluxo de carga de pixels adjacentes.}
 	\end{figure}
 		
 	Como apresentado de forma gráfica em \cite{Spectral}, o funcionamento dos CCDs pode ser descrito, de forma análoga, como uma matriz de baldes (pixels) coletando água da chuva (fótons). Os baldes são expostos à chuva pela mesma quantidade de tempo, e consequentemente se enchem com diferentes quantidades de água. A seguir o CCD inicia a leitura de cada balde por vez. Este processo de leitura é feito transferindo a água de cada balde, da coluna mais a esquerda para o balde adjancente em uma coluna vazia ao lado. Essa coluna anteriormente vazia desloca um de seus baldes para baixo por vez, onde se encontra um conversor que reconhece e armazena o nível d'água. Ou seja, há um deslocamento horizontal dos ``baldes'' de uma coluna para ``baldes"" de outra, e posteriormente um deslocamento vertical de um ``balde'' por vez na coluna de saída.
 	
-	Na prática, como apresentado na Figura 4, o fótodiodo (polarizado reversamente) de cada pixel é exposto aos fótons incidentes sobre o sensor. Devido ao fluxo de fótons sobre o fótodiodo, elétrons são liberados - proprocionalmente a intensidade e cor da luz - e, consequentemente, lacunas são criadas na estrutura cristalina. Ou seja, há um fluxo de corrente induzido no fótodiodo agindo como capacitor. Inicialmente, esses elétrons ficam desprendidos na camada de depleção, mas posteriormente são concentrados na parte N+ do fótodiodo por conta do potencial positivo que é induzido nesta parte apenas durante a leitura.
+	Na prática, como apresentado na Figura 5, o fótodiodo (polarizado reversamente) de cada pixel é exposto aos fótons incidentes sobre o sensor. Devido ao fluxo de fótons sobre o fótodiodo, elétrons são liberados - proprocionalmente a intensidade e cor da luz - e, consequentemente, lacunas são criadas na estrutura cristalina. Ou seja, há um fluxo de corrente induzido no fótodiodo agindo como capacitor. Inicialmente, esses elétrons ficam desprendidos na camada de depleção, mas posteriormente são concentrados na parte N+ do fótodiodo por conta do potencial positivo que é induzido nesta parte apenas durante a leitura.
 	
 	Através do acionamento do transistor de seleção pela entrada SEL as cargas na coluna mais próxima ao amplificador ($COL_{j}$) são deslocadas para um registrador de deslocamento, que será responsável por transferir a carga de um pixel da coluna por vez ao amplificador. Devido ao acionamento do transistor de seleção - que age como o \textit{gate} descrito anteriormente-, após  as cargas da coluna serem transferidas para a saída, as cargas na coluna anterior ($COL_{j-1}$) são deslocadas para a coluna $COL_{j}$. O processo segue em \textit{loop} até que todas as linhas e colunas tenham sido iteradas. A leitura das cargas no CCD pode ser feita de forma mais rápida ao construir o CCD com amplificadores em cada vértice da matriz de pixels, e adicionar registradores de deslocamento em cada aresta.
 	
