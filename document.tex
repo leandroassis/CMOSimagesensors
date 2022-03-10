@@ -112,7 +112,9 @@
 	De acordo com os argumentos apresentados, conclui-se que sensores CMOS são mais utilizados em aplicações que requerem rápido processamento, baixo consumo elétrico e menor custo de produção como câmeras digitais para celulares, enquanto sensores CCDs são usados em aplicações que necessitam mais sensibilidade e menos ruído, como aplicações de fotografia espacial -entretanto cada vez mais os sensores CMOS evoluem e tomam este espaço dos CCDs-.
 	
 	\section*{Conclusão: Simulação de um sensor CMOS 3T simplificado}
-	Com o objetivo de consolidar e exemplificar os conhecimentos apresentados de forma teórica ao longo deste trabalho, simula-se um sensor CMOS 3T simplificado. A escolha deste sensor foi feita pois sua arquitetura simplificada é facilmente montável e simulável, já não seria possível simular a 
+	Com o objetivo de consolidar e exemplificar os conhecimentos apresentados de forma teórica ao longo deste trabalho, simula-se um sensor CMOS 3T. A escolha deste sensor foi feita pois sua arquitetura simplificada é facilmente montável e simulável, já não seria possível simular o princípio de funcionamento dos CCDs, por exemplo, por conta do deslocamento lateral entre os pixels.
+	
+	Para fazer a simulação foi utilizado o \textit{software} LTSpice a fim de fazer um análise \textit{Time Domain}. Infelizmente esse \textit{software} não despõem originalmente de fótodiodos e simulações de parâmetros de luminosidade. Para contornar isso, foi utilizada a ferramenta \cite{photodiode} disponibilizada no \textit{site} da fabricante para gerar um circuito equivalente de um fótodiodo polarizado reversamente. Dentre as configurações dessa ferramenta, escolheu-se a opção de gerar um circuito equivalente ao fótodiodo BPW34S \cite{BPW34}, polarizado reversamente por um tensão de 3.3 V
 	
 	\begin{thebibliography}{99}
 		\bibitem[1]{MazinSaad2019}
@@ -138,6 +140,12 @@
 		
 		\bibitem[8]{ColorRecognition}
 		{Hodgins, Sean, {I Made My Own Image Sensor! (And Digital Camera)}. Youtube, 2020. Disponível em: \url{https://www.youtube.com/watch?v=PaXweP73NT4}. Acesso em: 03 mar 2022.}
+		
+		\bibitem[9]{BPW34}
+		{Vishay Semiconductors, {``BPW34, BPW34S: Silicon PIN Photodiode''}, Data Sheet, Document Number: 91000, 01 Jan 2022. Disponível em: \url{https://www.vishay.com/docs/81521/bpw34.pdf}. Acesso em: 10 mar 2022.}
+		
+		\bibitem[10]{photodiode}
+		{Analog Devices. {Photodiode Circuit Design Wizard}, Website. Disponível em: \url{https://tools.analog.com/en/photodiode/}. Acesso em: 10 mar 2022}
 
 	\end{thebibliography}
 \end{document}
