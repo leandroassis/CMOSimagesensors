@@ -29,7 +29,7 @@
 		\end{figure}
 		Em razão da concentração de cargas nos extremos do diodo e do aumento da barreira de potencial, isto é, o aumento da voltagem entre as extremidades da região de depleção, a região de depleção se torna mais larga e podemos pensar nos extremos do diodo como as placas de um capacitor. A junção pn portanto, quando polarizada reversamente, possui capacitância dependente de $V_{R}$.
 		
-		Uma vez que possui-se o fótodiodo funcionando como um capacitor sob uma tensão reversa, o dispositivo se carregará com um dado valor $V_{C}$ que depende do tempo ao qual o fótodiodo (agora agindo como capacitor) ficou alimentado pela tensão reversa $V_{R}$. Com o fótodiodo carregado permite-se a entrada de luz sobre o sensor, que resultará em uma indução de corrente na junção pn e, consequentemente, em uma diminuição na tensão $V_{C}$. A partir da observação individual da tensão $V_{C}$ em uma matriz de fótodiodos é possível fazer a transdução da luz incidente sobre o sensor em uma imagem. O mesmo princípio pode ser utilizado de forma um pouco diferente, deixando a corrente que os fótons induzem no fótodiodo gerar uma tensão - proporcional a capacitância obtida ao polarizar o diodo reversamente - que posteriormente é observada e analisada para gerar a imagem.
+		Uma vez que possui-se o fótodiodo funcionando como um capacitor sob uma tensão reversa, o dispositivo se carregará com um dado valor $V_{C}$ que depende do tempo ao qual o fótodiodo (agora agindo como capacitor) ficou alimentado pela tensão reversa $V_{R}$. Com o fótodiodo carregado permite-se a entrada de luz sobre o sensor, que resultará em uma indução de corrente na junção pn e, consequentemente, em uma diminuição na tensão $V_{C}$. A partir da observação individual da tensão $V_{C}$ em uma matriz de fótodiodos é possível fazer a transdução da luz incidente sobre o sensor em uma imagem.
 		
 \section*{Tipos de sensores de imagem}
 		Os sensores de imagem podem ser separados em dois principais tipos, eles são os CCDs (\textit{Charge-Couple Device}) e os sensores CMOS, configurações de sensores baseados em APS (\textit{Active Pixel Sensor}), estes podendo ser classificados de acordo com o número de transistores por pixel, como por exemplo 3T-APS, 4T-APS e assim por diante. Ambos os dispositivos são feitos com tecnologia MOS (\textit{Metal Oxide Semiconductor}), com CCDs baseados em capacitores MOS e os sensores CMOS baseados em amplificadores MOSFET. A seguir entra-se em mais detalhes sobre cada tipo de sensor, suas características, histórias, vantagens e desvantagens.
@@ -42,36 +42,39 @@
 		Apesar dos sensores CCDs terem sido pioneiros no ramo de medição científica nos anos 80 e se tornado o sensor de escolha para praticamente toda aplicação de imagens nesta época, o desenvolvimento de sensores CMOS atingiu um ponto em que começou a substituir os sensores CCDs em aplicações de baixa performance. Com o passar do tempo os sensores de tecnologia CMOS se expandiram, enquanto os de tecnologia CCD estagnaram. De forma geral, ambos os dispositivos são utilizados de acordo com a necessidade da aplicação.
 		
 	\subsubsection*{Sensores de Pixel Passivo - PPS} 
-		Os precursores dos sensores APS foram os PPS (do inglês, passive-pixel sensor), um tipo de matriz de pixels formada por fótodiodos e uma chave MOSFET, que consiste em ``pixels passivos'' lidos sem amplificação, ou seja, essa configuração de pixel transfere diretamente o sinal acumulado para fora do pixel. Nesses sensores cada pixel possui uma junção pn, capacitor integrado e transistores de seleção. Essa configuração de pixels passivos foi proposta por G. Weckler em 1968 e antecedeu a criação dos CCDs. Os PPS sofrem de diversas limitações como alto ruído, baixo tempo de leitura e dificuldade de escalabilidade. De forma geral, os sensores CCDs possuem matrizes de pixels passivos.
+		Os precursores dos sensores APS foram os PPS (do inglês, passive-pixel sensor), um tipo de matriz de pixels formada por fótodiodos e uma chave MOSFET, que consiste em ``pixels passivos'' sem amplificação, ou seja, essa configuração de pixel transfere diretamente o sinal acumulado para fora do pixel. Nesses sensores cada pixel possui uma junção pn, capacitor integrado e transistores de seleção. Essa configuração de pixels passivos foi proposta por G. Weckler em 1968 e antecedeu a criação dos CCDs. Os PPS sofrem de diversas limitações como alto ruído, baixo tempo de leitura e dificuldade de escalabilidade. De forma geral, os sensores CCDs possuem matrizes de pixels passivos.
 		
 	\subsubsection*{Sensores de Pixel Ativos - APS}
 		Esses sensores consistem de ``pixels ativos'', que consiste em um ou mais amplificadores MOSFET que convertem a carga fótogerada em uma tensão, amplifica o sinal de tensão e reduz o ruido. Esse conceito de pixel foi proposto por Peter Noble em 1968, entretanto esta topologia de pixels só foi fabricada a partir de 1985 devido as evoluções nos processos de fabricação dos transistores MOS.  Os sensores CMOS utilizam dessa configuração de pixels para seu funcionamento, tendo como principal diferença o uso de transistores CMOS ao invés de transistores PMOS ou NMOS.
 	
-	\begin{figure}[!h]
+	\begin{figure}[!ht]
 		\centering
 		\includegraphics[scale=0.26]{imagens/passive_vs_active.png}
 		\caption{Apresentação das configurações de PPS (a) e APS (b).}
 	\end{figure}
 	
 	\subsection*{Sensores CCD}
-	Como dito anteriormente, os CCDs são circuitos integrados formado por pixels feitos de silício. CCDs existem em diversas variedades de tamanhos e tipos e são comumente usados em diversas aplicações científicas de alta tecnologia.
+	Como dito anteriormente, os CCDs são circuitos integrados formado por pixels feitos de silício. Esses pixel dispostos em colunas possuem um \textit{gate} responsável por controlar o deslocamento e armazenamento de cargas através da tensão, a Figura 3 apresenta a transição de cargas de pixels de colunas adjacentes feito ao comutar o gate da coluna de destino para HIGH e da coluna de partida para LOW de forma gradativa.
 	
-	\begin{figure}[!h]
+	\begin{figure}[!ht]
 		\centering
-		\includegraphics[scale=0.4]{imagens/ccd.jpg}
-		\caption{Circuito integrado CCD.}
+		\includegraphics[scale=0.52]{imagens/ccd.jpg}
+		\caption{Fluxo de carga de pixels adjacentes.}
 	\end{figure}
 		
-	Como apresentado de forma excelente em \cite{Spectral}, o funcionamento dos CCDs pode ser descrito, de forma simplificada, como uma matriz de baldes (pixels) coletando água da chuva (fótons). Os baldes são expostos à chuva pela mesma quantidade de tempo, e consequentemente se enchem com diferentes quantidades de água. A seguir o CCD inicia a leitura de cada balde por vez. Este processo de leitura é feito transferindo a água de cada balde de uma coluna para o balde adjancente em uma coluna vazia ao lado, os baldes nesta coluna anteriormente vazia transferem a água para baixo um de cada vez, onde se encontra um conversor que reconhece e armazena o nível d'água de cada balde.
+	Como apresentado de forma gráfica em \cite{Spectral}, o funcionamento dos CCDs pode ser descrito, de forma análoga, como uma matriz de baldes (pixels) coletando água da chuva (fótons). Os baldes são expostos à chuva pela mesma quantidade de tempo, e consequentemente se enchem com diferentes quantidades de água. A seguir o CCD inicia a leitura de cada balde por vez. Este processo de leitura é feito transferindo a água de cada balde, da coluna mais a esquerda para o balde adjancente em uma coluna vazia ao lado. Essa coluna anteriormente vazia desloca um de seus baldes para baixo por vez, onde se encontra um conversor que reconhece e armazena o nível d'água. Ou seja, há um deslocamento horizontal dos ``baldes'' de uma coluna para ``baldes"" de outra, e posteriormente um deslocamento vertical de um ``balde'' por vez na coluna de saída.
 	
-	Na prática, como apresentado na Figura 4, o fótodiodo de cada pixel é exposto aos fótons incidentes sobre o sensor. Devido ao fluxo de fótons sobre o fótodiodo, elétrons são liberados - proprocionalmente a intensidade e cor da luz - e, consequentemente, lacunas são criadas na estrutura cristalina. Esses elétrons ficam concentradas na parte N+ do fótodiodo por conta do potencial positivo conectado, e em seguida são deslocados lateralmente para um ``bloco'' de armazenamento SN. Através do acionamento de um transistor de seleção pela entrada SEL, os elétrons armazenados são conduzidos para a coluna pixel a pixel, de baixo para cima. A carga na coluna mais próxima ao amplificador ($COL_{j}$) é posteriormente deslocada para a saída, que passa pelo estágio de amplificação e conversão A/D, e as cargas de cada pixel (linha) na coluna anterior ($COL_{j-1}$) é deslocada para o pixel de mesma linha em $COL_{j}$. O processo segue em \textit{loop} até que todas as linhas e colunas tenham sido iteradas.
+	Na prática, como apresentado na Figura 4, o fótodiodo (polarizado reversamente) de cada pixel é exposto aos fótons incidentes sobre o sensor. Devido ao fluxo de fótons sobre o fótodiodo, elétrons são liberados - proprocionalmente a intensidade e cor da luz - e, consequentemente, lacunas são criadas na estrutura cristalina. Ou seja, há um fluxo de corrente induzido no fótodiodo agindo como capacitor. Inicialmente, esses elétrons ficam desprendidos na camada de depleção, mas posteriormente são concentrados na parte N+ do fótodiodo por conta do potencial positivo que é induzido nesta parte apenas durante a leitura.
 	
+	Através do acionamento do transistor de seleção pela entrada SEL as cargas na coluna mais próxima ao amplificador ($COL_{j}$) são deslocadas para um registrador de deslocamento, que será responsável por transferir a carga de um pixel da coluna por vez ao amplificador. Devido ao acionamento do transistor de seleção - que age como o \textit{gate} descrito anteriormente-, após  as cargas da coluna serem transferidas para a saída, as cargas na coluna anterior ($COL_{j-1}$) são deslocadas para a coluna $COL_{j}$. O processo segue em \textit{loop} até que todas as linhas e colunas tenham sido iteradas. A leitura das cargas no CCD pode ser feita de forma mais rápida ao construir o CCD com amplificadores em cada vértice da matriz de pixels, e adicionar registradores de deslocamento em cada aresta.
+	
+	Após o processo, afim de preparar os pixels do CCD para uma nova leitura, o transistor de \textit{reset} é acionado pela entrada RST, e todos os \textit{gates} são levados à nivel lógico alto - entrada SEL acionada para todas os pixels -, fazendo com que os fótodiodos de cada pixel voltem para o estado inicial e fiquem prontos para um novo processo.
+
 	\begin{figure}[!h]
 		\centering
 		\includegraphics[scale=0.56]{imagens/passive-pixel.jpg}
 		\caption{\textit{Array} simplificada de um CCD.}
 	\end{figure}
-	
 	
 	\subsection*{Sensores CMOS}
 	Fazer quarta
@@ -81,7 +84,7 @@
 	\section*{Simulação de um sensor CMOS simplificado}
 	Fazer quinta	
 	\section*{Extra: Separação de cores}
-	Fazer quarta
+	Fazer quinta
 	
 	\begin{thebibliography}{99}
 		\bibitem[1]{MazinSaad2019}
