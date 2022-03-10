@@ -1,8 +1,8 @@
-\documentclass[11pt,a4paper,twocolumn]{article}
+\documentclass[10pt,a4paper,twocolumn]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{times}
-\usepackage[left=1.5cm,top=1.5cm,right=1.5cm,bottom=2cm]{geometry}
+\usepackage[left=1.2cm,top=1.8cm,right=1.2cm,bottom=2cm]{geometry}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{makeidx}
@@ -48,20 +48,14 @@
 	\subsubsection*{Sensores de Pixel Ativos - APS}
 		Esses sensores consistem de ``pixels ativos'', que consiste em um ou mais amplificadores MOSFET que convertem a carga fótogerada em uma tensão, amplifica o sinal de tensão e reduz o ruido. Esse conceito de pixel foi proposto por Peter Noble em 1968, entretanto esta topologia de pixels só foi fabricada a partir de 1985 devido as evoluções nos processos de fabricação dos transistores MOS.  Os sensores CMOS utilizam dessa configuração de pixels para seu funcionamento, tendo como principal diferença o uso de transistores CMOS ao invés de transistores PMOS ou NMOS.
 	
-	\begin{figure}[H]
+	\begin{figure}[!h]
 		\centering
 		\includegraphics[scale=0.24]{imagens/passive_vs_active.png}
 		\caption{Apresentação das configurações de PPS (a) e APS (b).}
 	\end{figure}
 	
 	\subsection*{Sensores CCD}
-	\begin{figure}[H]
-		\centering
-		\includegraphics[scale=0.5]{imagens/ccd_sensor.jpg}
-		\caption{Circuito integrado CCD.}
-	\end{figure}
-	
-	Como dito anteriormente, os CCDs são circuitos integrados formado por pixels em matriz feitos de silício, registradores de deslocamento analógicos e amplificadores. Esses pixel dispostos em colunas possuem um \textit{gate} responsável por controlar o deslocamento e armazenamento de cargas através da tensão, a Figura 4 apresenta a transição de cargas de pixels de colunas adjacentes feito ao comutar o gate da coluna de destino para HIGH e da coluna de partida para LOW de forma gradativa.
+	Como dito anteriormente, os CCDs são circuitos integrados formado por pixels em matriz feitos em uma placa de silício, registradores de deslocamento analógicos e amplificadores. Esses pixel dispostos em colunas possuem um \textit{gate} responsável por controlar o deslocamento e armazenamento de cargas através da tensão, a Figura 3 apresenta a transição de cargas de pixels de colunas adjacentes feito ao comutar o gate da coluna de destino para HIGH e da coluna de partida para LOW de forma gradativa.
 	
 	\begin{figure}[!h]
 		\centering
@@ -71,28 +65,47 @@
 		
 	Como apresentado de forma gráfica em \cite{Spectral}, o funcionamento dos CCDs pode ser descrito, de forma análoga, como uma matriz de baldes (pixels) coletando água da chuva (fótons). Os baldes são expostos à chuva pela mesma quantidade de tempo, e consequentemente se enchem com diferentes quantidades de água. A seguir o CCD inicia a leitura de cada balde por vez. Este processo de leitura é feito transferindo a água de cada balde, da coluna mais a esquerda para o balde adjancente em uma coluna vazia ao lado. Essa coluna anteriormente vazia desloca um de seus baldes para baixo por vez, onde se encontra um conversor que reconhece e armazena o nível d'água. Ou seja, há um deslocamento horizontal dos ``baldes'' de uma coluna para ``baldes"" de outra, e posteriormente um deslocamento vertical de um ``balde'' por vez na coluna de saída.
 	
-	Na prática, como apresentado na Figura 5, o fótodiodo (polarizado reversamente) de cada pixel é exposto aos fótons incidentes sobre o sensor. Devido ao fluxo de fótons sobre o fótodiodo, elétrons são liberados - proprocionalmente a intensidade e cor da luz - e, consequentemente, lacunas são criadas na estrutura cristalina. Ou seja, há um fluxo de corrente induzido no fótodiodo agindo como capacitor. Inicialmente, esses elétrons ficam desprendidos na camada de depleção, mas posteriormente são concentrados na parte N+ do fótodiodo por conta do potencial positivo que é induzido nesta parte apenas durante a leitura.
+	Na prática, como apresentado na Figura 4, o fótodiodo polarizado reversamente de cada pixel é exposto aos fótons incidentes sobre o sensor. Devido ao fluxo de fótons sobre o fótodiodo, elétrons são liberados - proprocionalmente a intensidade e cor da luz - e, consequentemente, lacunas são criadas na estrutura cristalina. Ou seja, há um fluxo de corrente induzido no fótodiodo agindo como capacitor. Inicialmente, esses elétrons ficam desprendidos na camada de depleção, mas posteriormente são concentrados na parte N+ do fótodiodo por conta do potencial positivo que é induzido nesta parte apenas durante a leitura.
 	
-	Através do acionamento do transistor de seleção pela entrada SEL as cargas na coluna mais próxima ao amplificador ($COL_{j}$) são deslocadas para um registrador de deslocamento, que será responsável por transferir a carga de um pixel da coluna por vez ao amplificador. Devido ao acionamento do transistor de seleção - que age como o \textit{gate} descrito anteriormente-, após  as cargas da coluna serem transferidas para a saída, as cargas na coluna anterior ($COL_{j-1}$) são deslocadas para a coluna $COL_{j}$. O processo segue em \textit{loop} até que todas as linhas e colunas tenham sido iteradas. A leitura das cargas no CCD pode ser feita de forma mais rápida ao construir o CCD com amplificadores em cada vértice da matriz de pixels, e adicionar registradores de deslocamento em cada aresta.
+	Através do acionamento do transistor de seleção pela entrada SEL as cargas na coluna mais próxima ao amplificador ($COL_{j}$) são deslocadas para um registrador de deslocamento, que será responsável por transferir a carga de um pixel da coluna por vez ao amplificador. Devido ao acionamento do transistor de seleção - que age como o \textit{gate} descrito anteriormente-, após as cargas da coluna serem transferidas para a saída, as cargas nas coluna anteriores ($COL_{j-1}$, $COL_{j-2}$, e assim por diante) são deslocadas para as colunas posteriores ($COL_{j}$, $COL_{j-1}$, e assim por diante). O processo segue em \textit{loop} até que todas as linhas e colunas tenham sido iteradas. A leitura das cargas no CCD pode ser feita de forma mais rápida ao construir o CCD com amplificadores em cada vértice da matriz de pixels, e adicionar registradores de deslocamento em cada aresta.
 	
-	Após o processo, afim de preparar os pixels do CCD para uma nova leitura, o transistor de \textit{reset} é acionado pela entrada RST, e todos os \textit{gates} são levados à nivel lógico alto - entrada SEL acionada para todas os pixels -, fazendo com que os fótodiodos de cada pixel voltem para o estado inicial e fiquem prontos para um novo processo.
+	Após o processo, afim de preparar os pixels do CCD para uma nova leitura, o transistor de \textit{reset} é acionado pela entrada RST, e todos os \textit{gates} são levados à nivel lógico alto - entrada SEL acionada para todas os pixels - por um período de tempo, fazendo com que os fótodiodos de cada pixel voltem para o estado inicial e fiquem prontos para um novo processo.
 
-	\begin{figure}[!h]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.56]{imagens/passive-pixel.jpg}
 		\caption{\textit{Array} simplificada de um CCD.}
 	\end{figure}
 	
 	\subsection*{Sensores CMOS}
-	Fazer quarta
+	Assim  como os CCDs, os sensores CMOS são dispositivos capazes de transdutar os fótons incidentes em energias elétricas. A partir de 2010 esses sensores substituíram grande parte se não todos os CCDs, por conta das vantagens que este dispositivo tem sobre os CCD. Os sensores CMOS também são constituídos de matrizes de pixels feitos em uma placa de silício. A grande diferença na arquitetura desses dispostivos é que utilizar a configuração APS - ao invés da PPS, como os CCDs -, ou seja, possuem amplificação interna em cada pixel. A seguir, na figura 5, é apresentado um pixel simplificado de um sensor CMOS-3T (3T é devido aos 3 transistores presentes no pixel).
+	
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[scale=0.12]{imagens/cmos_3t.jpg}
+		\caption{\textit{Pixel} CMOS 3T.}
+	\end{figure}
+	
+	O princípio de funcionamento dos sensores CMOS é de certa forma mais simples que os CCDs. O fótodiodo polarizado reversamente que funciona como um capacitor armazena a tensão $V_{RST}$ ao acionar o transistor MOSFET $M_{rst}$ através da adição de nível HIGH na entrada RESET durante o intervalo de \textit{reset}. Ao levar o nível da entrada RESET para LOW, o fótodiodo é deixado flutuando e os fótons incidentes sobre a junção pn induzem uma corrente que descarrega a tensão armazenada e, consequentemente, altera a tensão no \textit{gate} do transistor $M_{sf}$, que atua como amplificador \textit{source follower}, resultando em uma variação na tensão -submúltiplo de $V_{DD}$ proporcional a tensão no gate do MOSFET- que chega ao transistor de seleção $M_{sel}$. O período de tempo após desligar o transistor $M_{rst}$, onde é analisada a flutuação de tensão no fótodiodo, é chamado tempo de integração.
+	
+	Após o tempo de integração, acionando o transistor $M_{sel}$ através da entrada ROW SEl, uma corrente flui de VDD para OUT pelos transistores $M_{sel}$ e $M_{sf}$, e a tensão no cátodo do fótodiodo pode ser lida na saída do pixel. A leitura de cada pixel organizados em matrizes é feita linha a linha através do acionamento do $M_{sel}$ correspondente e impondo a corrente em cada coluna. Antes de iniciar um novo ciclo de leitura, um novo tempo de \textit{reset} é distribuído linha a linha, ou em todos os pixels ao mesmo tempo após a leitura de toda a matriz. Ao resetar todos os fótodiodos ao mesmo tempo, evitam-se distorções de imagens. É interssante observar que, diferentemente dos CCDs, os sensores CMOS podem ler várias colunas ao mesmo tempo desde que as colunas não compartilhem a mesma saída de dados para processamento no circuito integrado.
+	
+	Diferentes configurações de sensores CMOS podem ser obtidas adicionando mais transistores para contemplar novas funções. Por exemplo, os CMOS-4T possuem um transistor de transferência $M_{tx}$ localizado entre o fótodiodo e o \textit{gate} do transistor $M_{sf}$, e um nó FD localizado no encontro do \textit{gate} de $M_{sf}$, \textit{source} de $M_{tx}$ e \textit{drain} de $M_{rst}$. A operação dessa configuração é praticamente a mesma que o CMOS-3T, mas com o transistor de transferência seccionando -$M_{tx}$ desligado, com nível LOW no \textit{gate}- inteiramente o fótodiodo durante a flutuação de tensão na captura de fótons, e inerligando-o durante a transferência de cargas para o \textit{source follower} e o \textit{reset}. A adição desses novos componentes a estrutura resultam em uma transferência de carga do fótodiodo para a saída OUT com menos ruído.
+	
+	Outras funções como linhas compartilhadas, 4 e 8 caminhos compartilhados para a leitura mais rápida, aumento da densidade de pixels, ou correção de distorções como \textit{rolling shutter} podem ser adicionadas ao aumentar o número de transistores e/ou empregar outras arquiteturas, adicionando componentes como capacitores.
+	
 	\subsection*{CCD vs. CMOS}
-	Fazer quarta
+	É possível comparar a eficiência desses dois tipos de sensores ao comparar alguns parâmetros como integração de sistemas, 
+	
+	Por conta do uso de PPS (\textit{Passsive Pixels Sesores}), não é possível integrar dispositivos como \textit{timers} e conversores A/D diretamente na matriz de pixels, sendo nessário adicionar \textit{chips} periféricos para realizar essas funções, o que resulta em um tamanho maior para os circuitos integrados CCDs.
 
 	\section*{Simulação de um sensor CMOS simplificado}
 	Fazer quinta	
-	\section*{Extra: Separação de cores}
-	Fazer quinta
+	To do: Focar em uma análise mais quantiativa, com equações e etc
 	
+	\section{Extra: Cores em imagens}
+	fazer quinta
+
 	\begin{thebibliography}{99}
 		\bibitem[1]{MazinSaad2019}
 		{Mazin H.; Saad D. {Design and simulation of a CMOS image sensor with a built-in edge detection for tactile vision sensory substituition}, \textbf{AIMS Electronics and Electrical Engineering}. DOI: 10.3924/ElectrEng.2019.2.144, 06 May 2019.}

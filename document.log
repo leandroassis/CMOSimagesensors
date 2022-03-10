@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.3.7)  10 MAR 2022 00:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.3.7)  10 MAR 2022 14:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8,8 +8,8 @@ LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2021-11-22>
 (C:\Users\assis\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-(C:\Users\assis\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
-File: size11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+(C:\Users\assis\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count183
 \c@section=\count184
@@ -369,23 +369,23 @@ LaTeX Font Info:    ... okay on input line 16.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(42.67912pt, 512.14963pt, 42.67912pt)
-* v-part:(T,H,B)=(42.67912pt, 745.46222pt, 56.9055pt)
+* h-part:(L,W,R)=(34.14322pt, 529.22144pt, 34.14322pt)
+* v-part:(T,H,B)=(51.21504pt, 736.9263pt, 56.9055pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=512.14963pt
-* \textheight=745.46222pt
-* \oddsidemargin=-29.59087pt
-* \evensidemargin=-29.59087pt
-* \topmargin=-66.59087pt
+* \textwidth=529.22144pt
+* \textheight=736.9263pt
+* \oddsidemargin=-38.12677pt
+* \evensidemargin=-38.12677pt
+* \topmargin=-58.05495pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=11.0pt
+* \topskip=10.0pt
 * \footskip=30.0pt
 * \marginparwidth=4.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -462,7 +462,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 18.
 (C:\Users\assis\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<imagens/diodo_polarizado_reversamente.jpg, id=3, 504.38437pt x 323.70938pt>
+<imagens/diodo_polarizado_reversamente.jpg, id=7, 504.38437pt x 323.70938pt>
 File: imagens/diodo_polarizado_reversamente.jpg Graphic file (type jpg)
 <use imagens/diodo_polarizado_reversamente.jpg>
 Package pdftex.def Info: imagens/diodo_polarizado_reversamente.jpg  used on inp
@@ -477,120 +477,62 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.42 	
-       <./imagens/diodo_polarizado_reversamente.jpg>]
-<imagens/passive_vs_active.png, id=18, 717.68124pt x 922.44624pt>
+l.47 		
+        <./imagens/diodo_polarizado_reversamente.jpg>]
+<imagens/passive_vs_active.png, id=22, 717.68124pt x 922.44624pt>
 File: imagens/passive_vs_active.png Graphic file (type png)
 <use imagens/passive_vs_active.png>
 Package pdftex.def Info: imagens/passive_vs_active.png  used on input line 53.
 (pdftex.def)             Requested size: 172.24701pt x 221.39162pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-<imagens/ccd_sensor.jpg, id=19, 256.96pt x 197.73875pt>
-File: imagens/ccd_sensor.jpg Graphic file (type jpg)
-<use imagens/ccd_sensor.jpg>
-Package pdftex.def Info: imagens/ccd_sensor.jpg  used on input line 60.
-(pdftex.def)             Requested size: 128.47968pt x 98.86913pt.
-<imagens/ccd.jpg, id=20, 497.86pt x 259.97125pt>
+<imagens/ccd.jpg, id=23, 497.86pt x 259.97125pt>
 File: imagens/ccd.jpg Graphic file (type jpg)
 <use imagens/ccd.jpg>
-Package pdftex.def Info: imagens/ccd.jpg  used on input line 68.
+Package pdftex.def Info: imagens/ccd.jpg  used on input line 62.
 (pdftex.def)             Requested size: 248.92938pt x 129.9853pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[2
+<imagens/passive-pixel.jpg, id=25, 429.10312pt x 253.69781pt>
+File: imagens/passive-pixel.jpg Graphic file (type jpg)
+<use imagens/passive-pixel.jpg>
+Package pdftex.def Info: imagens/passive-pixel.jpg  used on input line 76.
+(pdftex.def)             Requested size: 240.2961pt x 142.0698pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.73 	
+l.79 	
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.73 	
-       <./imagens/passive_vs_active.png> <./imagens/ccd_sensor.jpg>]
-<imagens/passive-pixel.jpg, id=33, 429.10312pt x 253.69781pt>
-File: imagens/passive-pixel.jpg Graphic file (type jpg)
-<use imagens/passive-pixel.jpg>
-Package pdftex.def Info: imagens/passive-pixel.jpg  used on input line 82.
-(pdftex.def)             Requested size: 240.2961pt x 142.0698pt.
+l.79 	
+       <./imagens/passive_vs_active.png> <./imagens/ccd.jpg>]
+<imagens/cmos_3t.jpg, id=39, 1007.4pt x 1362.2895pt>
+File: imagens/cmos_3t.jpg Graphic file (type jpg)
+<use imagens/cmos_3t.jpg>
+Package pdftex.def Info: imagens/cmos_3t.jpg  used on input line 85.
+(pdftex.def)             Requested size: 120.88278pt x 163.46768pt.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 11
+4.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 1448) has occurred while \output is active []
-
-
-Underfull \hbox (badness 2495) in paragraph at lines 98--99
-\T1/ptm/b/n/10.95 Elec-tro-nics and Elec-tri-cal En-gi-ne-e-ring\T1/ptm/m/n/10.
-95 . DOI:
- []
-
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 10
-1.
 (C:\Users\assis\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Underfull \hbox (badness 1939) in paragraph at lines 104--105
-[]\T1/ptm/m/n/10.95 IMAGE sen-sor. In:WIKIPÉDIA: a en-ci-clo-pé-dia
+Underfull \hbox (badness 6477) in paragraph at lines 114--115
+[]\T1/ptm/m/n/10 Spectral Ins-tru-ments, Inc. What is a CCD?, Dis-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
-\T1/pcr/m/n/10.95 en . wikipedia . org / wiki / Image _ sensor$[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 107--108
-[]\T1/ptm/m/n/10.95 ACTIVE-pixel sen-sor. In:WIKIPÉDIA: a en-
- []
-
-
-Underfull \hbox (badness 4792) in paragraph at lines 107--108
-\T1/ptm/m/n/10.95 ci-clo-pé-dia li-vre. Wi-ki-me-dia, 2006. Dis-po-ní-vel
- []
-
-
-Underfull \hbox (badness 3199) in paragraph at lines 107--108
-\T1/ptm/m/n/10.95 em: []$\T1/pcr/m/n/10.95 https : / / en . wikipedia . org / w
-iki /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
-[]\T1/ptm/m/n/10.95 Meroli, Ste-fano, De-sign and im-ple-men-ta-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
-\T1/ptm/m/n/10.95 of Ac-tive Pi-xel Sen-sors (APS), Dis-po-ní-vel
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
-\T1/ptm/m/n/10.95 em: []$\T1/pcr/m/n/10.95 https : / / meroli . web . cern . ch
- /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
-\T1/pcr/m/n/10.95 lecture _ activepixelsensors . html$[]\T1/ptm/m/n/10.95 .
- []
-
-
-Underfull \hbox (badness 2894) in paragraph at lines 113--114
-[]\T1/ptm/m/n/10.95 Computerphile, Cap-tu-ring Di-gi-tal Ima-ges (The
- []
-
-
-Underfull \hbox (badness 2197) in paragraph at lines 113--114
-\T1/ptm/m/n/10.95 Bayer Fil-ter) - Com-pu-terphile. You-tube, 2015.
+Underfull \hbox (badness 8132) in paragraph at lines 114--115
+\T1/ptm/m/n/10 po-ní-vel em: []$\T1/pcr/m/n/10 https : / / specinstcameras . co
+m /
  []
 
 [3
@@ -598,33 +540,80 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.114 		
+l.115 		
         
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.114 		
-         <./imagens/ccd.jpg> <./imagens/passive-pixel.jpg>]
-Underfull \hbox (badness 7186) in paragraph at lines 116--117
-\T1/ptm/m/n/10.95 CCD vs CMOS. You-tube, 2019. Dis-po-ní-vel
+l.115 		
+         <./imagens/passive-pixel.jpg> <./imagens/cmos_3t.jpg>]
+Underfull \hbox (badness 3019) in paragraph at lines 117--118
+[]\T1/ptm/m/n/10 IMAGE sen-sor. In:WIKIPÉDIA: a en-ci-clo-pé-dia li-vre.
  []
 
 
-Underfull \hbox (badness 3199) in paragraph at lines 116--117
-\T1/ptm/m/n/10.95 em: []$\T1/pcr/m/n/10.95 https : / / www . youtube . com / wa
-tch ?
+Underfull \hbox (badness 7740) in paragraph at lines 117--118
+\T1/ptm/m/n/10 Wi-ki-me-dia, 2006. Dis-po-ní-vel em: []$\T1/pcr/m/n/10 https : 
+/ / en .
  []
 
 
-Underfull \hbox (badness 1721) in paragraph at lines 119--120
-[]\T1/ptm/m/n/10.95 Hodgins, Sean, I Made My Own Image Sen-
+Underfull \hbox (badness 3364) in paragraph at lines 120--121
+[]\T1/ptm/m/n/10 ACTIVE-pixel sen-sor. In:WIKIPÉDIA: a en-ci-clo-pé-dia
  []
 
 
-Underfull \hbox (badness 2512) in paragraph at lines 119--120
-\T1/ptm/m/n/10.95 po-ní-vel em: []$\T1/pcr/m/n/10.95 https : / / www . youtube 
-. com /
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
+\T1/pcr/m/n/10 wikipedia . org / wiki / Active-[]pixel _ sensor$[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--124
+[]\T1/ptm/m/n/10 Meroli, Ste-fano, De-sign and im-ple-men-ta-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--124
+\T1/ptm/m/n/10 of Ac-tive Pi-xel Sen-sors (APS), Dis-po-ní-vel em:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--124
+[]$\T1/pcr/m/n/10 https : / / meroli . web . cern . ch / lecture _
+ []
+
+
+Underfull \hbox (badness 1248) in paragraph at lines 123--124
+\T1/pcr/m/n/10 activepixelsensors . html$[]\T1/ptm/m/n/10 . Acesso em: 07 mar
+ []
+
+
+Underfull \hbox (badness 2662) in paragraph at lines 126--127
+[]\T1/ptm/m/n/10 Computerphile, Cap-tu-ring Di-gi-tal Ima-ges (The Bayer
+ []
+
+
+Underfull \hbox (badness 7047) in paragraph at lines 126--127
+\T1/ptm/m/n/10 Fil-ter) - Com-pu-terphile. You-tube, 2015. Dis-po-ní-vel
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
+\T1/ptm/m/n/10 em: []$\T1/pcr/m/n/10 https : / / www . youtube . com / watch ? 
+v =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
+\T1/pcr/m/n/10 youtube . com / watch ? v = FKJFIzDfUNE & t = 421s$[]\T1/ptm/m/n
+/10 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+\T1/pcr/m/n/10 / / www . youtube . com / watch ? v = PaXweP73NT4$[]\T1/ptm/m/n/
+10 .
  []
 
 [4
@@ -632,13 +621,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ColorRec
 ognition}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.122 \end{document}
+l.135 \end{document}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ColorRec
 ognition}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.122 \end{document}
+l.135 \end{document}
                     
 
 ] (document.aux)
@@ -646,29 +635,29 @@ l.122 \end{document}
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: E97233D6028716FB45737AF9E686AEB6;167.
  ) 
 Here is how much of TeX's memory you used:
- 11309 strings out of 478659
- 179133 string characters out of 2845921
- 502195 words of memory out of 3000000
- 29209 multiletter control sequences out of 15000+600000
- 433805 words of font info for 70 fonts, out of 8000000 for 9000
+ 11317 strings out of 478659
+ 179125 string characters out of 2845921
+ 506183 words of memory out of 3000000
+ 29215 multiletter control sequences out of 15000+600000
+ 433950 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,8n,63p,895b,443s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,8n,63p,977b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/assis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:
 /Users/assis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi1
 0.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmmi8.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmr8.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmsy8.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/font
+/cm/cmmi7.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmr7.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmsy7.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/font
 s/type1/urw/courier/ucrr8a.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fo
 nts/type1/urw/times/utmb8a.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fo
 nts/type1/urw/times/utmr8a.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fo
 nts/type1/urw/times/utmri8a.pfb>
-Output written on document.pdf (4 pages, 300039 bytes).
+Output written on document.pdf (4 pages, 335592 bytes).
 PDF statistics:
- 112 PDF objects out of 1000 (max. 8388607)
+ 116 PDF objects out of 1000 (max. 8388607)
  27 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 34 words of extra memory for PDF output out of 10000 (max. 10000000)
 
