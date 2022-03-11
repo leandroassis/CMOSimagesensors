@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.3.7)  10 MAR 2022 20:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.3.7)  11 MAR 2022 19:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -462,7 +462,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 18.
 (C:\Users\assis\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<imagens/diodo_polarizado_reversamente.jpg, id=3, 504.38437pt x 323.70938pt>
+<imagens/diodo_polarizado_reversamente.jpg, id=7, 504.38437pt x 323.70938pt>
 File: imagens/diodo_polarizado_reversamente.jpg Graphic file (type jpg)
 <use imagens/diodo_polarizado_reversamente.jpg>
 Package pdftex.def Info: imagens/diodo_polarizado_reversamente.jpg  used on inp
@@ -479,17 +479,17 @@ s been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.46 		
         <./imagens/diodo_polarizado_reversamente.jpg>]
-<imagens/passive_vs_active.png, id=18, 717.68124pt x 922.44624pt>
+<imagens/passive_vs_active.png, id=22, 717.68124pt x 922.44624pt>
 File: imagens/passive_vs_active.png Graphic file (type png)
 <use imagens/passive_vs_active.png>
 Package pdftex.def Info: imagens/passive_vs_active.png  used on input line 55.
 (pdftex.def)             Requested size: 172.24701pt x 221.39162pt.
-<imagens/ccd.jpg, id=19, 497.86pt x 259.97125pt>
+<imagens/ccd.jpg, id=23, 497.86pt x 259.97125pt>
 File: imagens/ccd.jpg Graphic file (type jpg)
 <use imagens/ccd.jpg>
 Package pdftex.def Info: imagens/ccd.jpg  used on input line 64.
 (pdftex.def)             Requested size: 248.92938pt x 129.9853pt.
-<imagens/passive-pixel.jpg, id=21, 429.10312pt x 253.69781pt>
+<imagens/passive-pixel.jpg, id=25, 429.10312pt x 253.69781pt>
 File: imagens/passive-pixel.jpg Graphic file (type jpg)
 <use imagens/passive-pixel.jpg>
 Package pdftex.def Info: imagens/passive-pixel.jpg  used on input line 74.
@@ -514,7 +514,7 @@ s been already used, duplicate ignored
 l.79 	
        <./imagens/passive_vs_active.png> <./imagens/ccd.jpg> <./imagens/passive
 -pixel.jpg>]
-<imagens/cmos_3t.jpg, id=34, 1007.4pt x 1362.2895pt>
+<imagens/cmos_3t.jpg, id=38, 1007.4pt x 1362.2895pt>
 File: imagens/cmos_3t.jpg Graphic file (type jpg)
 <use imagens/cmos_3t.jpg>
 Package pdftex.def Info: imagens/cmos_3t.jpg  used on input line 87.
@@ -526,29 +526,31 @@ s been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.109 	
         <./imagens/cmos_3t.jpg>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 LaTeX Font Info:    Trying to load font information for T1+pcr on input line 12
-4.
+7.
 
 (C:\Users\assis\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Underfull \hbox (badness 4792) in paragraph at lines 124--125
+Underfull \hbox (badness 4792) in paragraph at lines 127--128
 []\T1/ptm/m/n/10 Spectral Ins-tru-ments, Inc. What is a CCD?, Dis-po-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--125
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
 \T1/ptm/m/n/10 ní-vel em: []$\T1/pcr/m/n/10 https : / / specinstcameras . com /
 
  []
 
 
-Underfull \hbox (badness 7291) in paragraph at lines 130--131
+Underfull \hbox (badness 7291) in paragraph at lines 131--132
 []\T1/ptm/m/n/10 ACTIVE-pixel sen-sor. In:WIKIPÉDIA: a en-ci-clo-pé-dia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--131
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
 \T1/pcr/m/n/10 wikipedia . org / wiki / Active-[]pixel _ sensor$[]
  []
 
@@ -563,28 +565,22 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ColorRec
 ognition}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.151 \end{document}
-                    
-pdfTeX warning (ext4): destination with the same identifier (name{cite.ColorRec
-ognition}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.151 \end{document}
+l.146 \end{document}
                     ] (document.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: B93A96A0FC5324A1CAE97250541345A6;141.
  ) 
 Here is how much of TeX's memory you used:
- 11316 strings out of 478659
- 179135 string characters out of 2845921
- 507229 words of memory out of 3000000
- 29213 multiletter control sequences out of 15000+600000
+ 11323 strings out of 478659
+ 179296 string characters out of 2845921
+ 507247 words of memory out of 3000000
+ 29218 multiletter control sequences out of 15000+600000
  433950 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,8n,63p,977b,344s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,8n,63p,1021b,344s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/assis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:
 /Users/assis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi1
 0.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
@@ -595,9 +591,9 @@ s/type1/urw/courier/ucrr8a.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fo
 nts/type1/urw/times/utmb8a.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fo
 nts/type1/urw/times/utmr8a.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fo
 nts/type1/urw/times/utmri8a.pfb>
-Output written on document.pdf (4 pages, 341922 bytes).
+Output written on document.pdf (4 pages, 344189 bytes).
 PDF statistics:
- 119 PDF objects out of 1000 (max. 8388607)
- 28 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 125 PDF objects out of 1000 (max. 8388607)
+ 30 named destinations out of 1000 (max. 500000)
+ 34 words of extra memory for PDF output out of 10000 (max. 10000000)
 

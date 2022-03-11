@@ -1,0 +1,19 @@
+* C:\Users\assis\Documents\trabalho-eletronica-I\simulação\Draft2.asc
+S1 N005 N004 RST 0 SW2
+I1 N005 0 45n
+Rsh N005 0 5G
+C1 N005 0 70p
+V1 N004 0 3.3
+V3 SEL 0 PULSE(0 3 2.74m 0 0 1.5m 5m)
+V2 RST 0 PULSE(0 3 0 0 0 1m 5m)
+XU1 N001 N005 N002 opamp Aol=100K GBW=10Meg
+R4 0 N001 9.9k
+R5 N002 N001 5.1k
+S2 out N002 SEL 0 SW2
+.tran 0 20m 0 10u
+.model SW2 SW(Ron=0.1m Roff=5Meg Vt=2.99 Vh=0)
+.model SW1 SW(Ron=0.1m Roff=5Meg Vt=2.99 Vh=0)
+.lib opamp.txt
+.lib opamp.sub
+.backanno
+.end
