@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.3.7)  11 MAR 2022 19:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.3.7)  11 MAR 2022 21:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -299,6 +299,9 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks26
 \@floatcapt=\box53
 )
+(C:\Users\assis\AppData\Local\Programs\MiKTeX\tex/latex/tools\indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
 (C:\Users\assis\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
 Package: babel 2021/11/29 3.67 The Babel package
 \babel@savecnt=\count283
@@ -321,7 +324,7 @@ se.ldf
 Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
 Package babel Info: Making " an active character on input line 143.
 ))
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 16
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 20
 .
 
 (C:\Users\assis\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
@@ -336,30 +339,27 @@ File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
 
 LaTeX Warning: Label `ColorRecognition' multiply defined.
 
-
-LaTeX Warning: Label `ColorRecognition' multiply defined.
-
 )
 \openout1 = `document.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -429,7 +429,7 @@ G,.JBIG2,.JB2,.eps]
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 16.
+Package hyperref Info: Link coloring OFF on input line 20.
 
 (C:\Users\assis\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -443,20 +443,20 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count292
 )
-LaTeX Info: Redefining \ref on input line 16.
-LaTeX Info: Redefining \pageref on input line 16.
-LaTeX Info: Redefining \nameref on input line 16.
+LaTeX Info: Redefining \ref on input line 20.
+LaTeX Info: Redefining \pageref on input line 20.
+LaTeX Info: Redefining \nameref on input line 20.
  (document.out) (document.out)
 \@outlinefile=\write3
 \openout3 = `document.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 18.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 22.
 
 
 (C:\Users\assis\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 18.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 22.
 
 
 (C:\Users\assis\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -466,7 +466,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: imagens/diodo_polarizado_reversamente.jpg Graphic file (type jpg)
 <use imagens/diodo_polarizado_reversamente.jpg>
 Package pdftex.def Info: imagens/diodo_polarizado_reversamente.jpg  used on inp
-ut line 28.
+ut line 32.
 (pdftex.def)             Requested size: 151.31647pt x 97.11356pt.
 
 [1{C:/Users/assis/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
@@ -477,123 +477,150 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.46 		
+l.53 		
         <./imagens/diodo_polarizado_reversamente.jpg>]
-<imagens/passive_vs_active.png, id=22, 717.68124pt x 922.44624pt>
+<imagens/passive_vs_active.png, id=23, 717.68124pt x 922.44624pt>
 File: imagens/passive_vs_active.png Graphic file (type png)
 <use imagens/passive_vs_active.png>
-Package pdftex.def Info: imagens/passive_vs_active.png  used on input line 55.
+Package pdftex.def Info: imagens/passive_vs_active.png  used on input line 59.
 (pdftex.def)             Requested size: 172.24701pt x 221.39162pt.
-<imagens/ccd.jpg, id=23, 497.86pt x 259.97125pt>
+<imagens/ccd.jpg, id=24, 497.86pt x 259.97125pt>
 File: imagens/ccd.jpg Graphic file (type jpg)
 <use imagens/ccd.jpg>
-Package pdftex.def Info: imagens/ccd.jpg  used on input line 64.
+Package pdftex.def Info: imagens/ccd.jpg  used on input line 68.
 (pdftex.def)             Requested size: 248.92938pt x 129.9853pt.
-<imagens/passive-pixel.jpg, id=25, 429.10312pt x 253.69781pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<imagens/passive-pixel.jpg, id=26, 429.10312pt x 253.69781pt>
 File: imagens/passive-pixel.jpg Graphic file (type jpg)
 <use imagens/passive-pixel.jpg>
-Package pdftex.def Info: imagens/passive-pixel.jpg  used on input line 74.
+Package pdftex.def Info: imagens/passive-pixel.jpg  used on input line 78.
 (pdftex.def)             Requested size: 240.2961pt x 142.0698pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [2
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.79 	
+l.88 	
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.79 	
+l.88 	
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.79 	
+l.88 	
        <./imagens/passive_vs_active.png> <./imagens/ccd.jpg> <./imagens/passive
 -pixel.jpg>]
-<imagens/cmos_3t.jpg, id=38, 1007.4pt x 1362.2895pt>
+<imagens/cmos_3t.jpg, id=40, 1007.4pt x 1362.2895pt>
 File: imagens/cmos_3t.jpg Graphic file (type jpg)
 <use imagens/cmos_3t.jpg>
-Package pdftex.def Info: imagens/cmos_3t.jpg  used on input line 87.
+Package pdftex.def Info: imagens/cmos_3t.jpg  used on input line 91.
 (pdftex.def)             Requested size: 120.88278pt x 163.46768pt.
  [3
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.109 	
-        <./imagens/cmos_3t.jpg>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 12
-7.
+l.118 	\section
+               *{ConclusÃ£o: SimulaÃ§Ã£o de um sensor CMOS 3T simplificado} <./
+imagens/cmos_3t.jpg>]
+<imagens/pixel_simulado.png, id=50, 622.57594pt x 490.08093pt>
+File: imagens/pixel_simulado.png Graphic file (type png)
+<use imagens/pixel_simulado.png>
+Package pdftex.def Info: imagens/pixel_simulado.png  used on input line 127.
+(pdftex.def)             Requested size: 161.86592pt x 127.41803pt.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 13
+8.
 
 (C:\Users\assis\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Underfull \hbox (badness 4792) in paragraph at lines 127--128
+Underfull \hbox (badness 4792) in paragraph at lines 138--139
 []\T1/ptm/m/n/10 Spectral Ins-tru-ments, Inc. What is a CCD?, Dis-po-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--128
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
 \T1/ptm/m/n/10 ní-vel em: []$\T1/pcr/m/n/10 https : / / specinstcameras . com /
 
  []
 
 
-Underfull \hbox (badness 7291) in paragraph at lines 131--132
+Underfull \hbox (badness 7291) in paragraph at lines 142--143
 []\T1/ptm/m/n/10 ACTIVE-pixel sen-sor. In:WIKIPÉDIA: a en-ci-clo-pé-dia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
 \T1/pcr/m/n/10 wikipedia . org / wiki / Active-[]pixel _ sensor$[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--134
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
 \T1/pcr/m/n/10 cern . ch / lecture _ activepixelsensors . html$[]\T1/ptm/m/n/10
  .
  []
 
 [4
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.157 \end{document}
+                    
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ColorRec
 ognition}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.146 \end{document}
-                    ] (document.aux)
+l.157 \end{document}
+                     <./imagens/pixel_simulado.png>] (document.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: B93A96A0FC5324A1CAE97250541345A6;141.
+
+Package rerunfilecheck Warning: File `document.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `document.out':
+(rerunfilecheck)             Before: B93A96A0FC5324A1CAE97250541345A6;141
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 11323 strings out of 478659
- 179296 string characters out of 2845921
- 507247 words of memory out of 3000000
- 29218 multiletter control sequences out of 15000+600000
+ 11352 strings out of 478659
+ 180309 string characters out of 2845921
+ 509364 words of memory out of 3000000
+ 29240 multiletter control sequences out of 15000+600000
  433950 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,8n,63p,1021b,344s stack positions out of 5000i,500n,10000p,200000b,80000s
-{C:/Users/assis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:
-/Users/assis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi1
-0.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmmi7.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmr7.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmsy7.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/font
-s/type1/urw/courier/ucrr8a.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fo
-nts/type1/urw/times/utmb8a.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fo
-nts/type1/urw/times/utmr8a.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fo
-nts/type1/urw/times/utmri8a.pfb>
-Output written on document.pdf (4 pages, 344189 bytes).
+ 60i,8n,63p,1021b,347s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+pdfTeX warning (dest): name{subsection.0.1} has been referenced but does not ex
+ist, replaced by a fixed one
+
+{C:/Users/assis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/U
+sers/assis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.
+pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmmi7.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmr7.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmsy7.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fonts/
+type1/urw/courier/ucrr8a.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/font
+s/type1/urw/times/utmb8a.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/font
+s/type1/urw/times/utmr8a.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/font
+s/type1/urw/times/utmri8a.pfb>
+Output written on document.pdf (4 pages, 360767 bytes).
 PDF statistics:
- 125 PDF objects out of 1000 (max. 8388607)
- 30 named destinations out of 1000 (max. 500000)
- 34 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 131 PDF objects out of 1000 (max. 8388607)
+ 32 named destinations out of 1000 (max. 500000)
+ 39 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -9,9 +9,13 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{float}
+\usepackage{indentfirst}
 \usepackage[portuguese]{babel}
 \title{\textbf{Diodos aplicados à sensores digitais de imagem}}
 \author{Leandro Assis dos Santos}
+
+\linespread{0.9}
+\setlength{\parskip}{0.05cm}
 
 \begin{document}
 \maketitle
@@ -116,9 +120,16 @@
 		
 	Para fazer a simulação foi utilizado o \textit{software} LTSpice a fim de fazer um análise \textit{Time Domain}. Infelizmente esse \textit{software} não despõem originalmente de fótodiodos e simulações de parâmetros de luminosidade. Para contornar isso, foi utilizada a ferramenta \cite{photodiode} para gerar um circuito equivalente de um fótodiodo polarizado reversamente. Dentre as configurações dessa ferramenta, escolheu-se a opção de gerar um circuito equivalente ao fótodiodo BPW34S \cite{BPW34} polarizado reversamente por uma tensão de 3.3 V, e com corrente de 45 nA induzida pelo fluxo de fótons durante o período de integração, que consiste em uma fonte de corrente, uma resistência $R_{sh}$ - resistência que aplicada sob a tensão da fonte gera a pequena ``corrente escura"" (\textit{Dark current}) característica do fótodiodo em polarização reversa -, e um capacitor $C_{j}$ equivalente a capacitância do fótodiodo em polarização reversa.
 	
-	Além disso, os transistores MOSFET $M_{rst}$ e $M_{sel}$ foram substituídos pelo componente ``switch'' (nomeado como sw), e o $M_{sf}$ foi substituído por um amplificador operacional na configuração não inversora que amplifica a tensão para o range de 0 à 5 V. Essas substituições foram feitas a fim de evitar o uso desses transistores não abordados na disciplica de Eletrônica I.
+	Além disso, os transistores MOSFET $M_{rst}$ e $M_{sel}$ foram substituídos pelo componente ``switch'' (nomeado como sw), e o $M_{sf}$ foi substituído por um amplificador operacional na configuração não inversora que amplifica a tensão para o range de 0 à 5 V. Essas substituições foram feitas a fim de evitar o uso desses transistores não abordados na disciplica de Eletrônica I. A seguir é apresentado o pixel construído para a simulação.
+		
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[scale=0.26]{imagens/pixel_simulado.png}
+		\caption{Pixel CMOS 3T no LTSpice.}
+	\end{figure}
 	
-	\subsection{Resultados obtidos}
+	\subsection*{Resultados obtidos}
+	 Embora as modificações em relação ao circuito original de um sensor CMOS-3T facilitem mais ainda a montagem do mesmo, elas também adicionam problemas ao circuito como ruído e a necessidadade de trabalhar com tensões, correntes e tempos de operação diferentes dos empregados na prática. Entretanto, apesar dos problemas criados pelas substituições de componentes feitas, os resultados obtidos são aceitáveis por conta do caráter puramente ilustrativo dessa simulação.
 	
 	\begin{thebibliography}{99}
 		\bibitem[1]{MazinSaad2019}
