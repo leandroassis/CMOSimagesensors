@@ -10,7 +10,6 @@ Limiting rise time of source v2 to 0.0001
 Limiting fall time of source v2 to 0.0001
 Limiting rise time of source v3 to 8.5e-005
 Limiting fall time of source v3 to 8.5e-005
-WARNING: Less than two connections to node N007.  This node is used by S2.
 Direct Newton iteration for .op point succeeded.
 Ignoring empty pin current: Ix(u1:1)
 Ignoring empty pin current: Ix(u1:2)
@@ -29,20 +28,20 @@ Ignoring empty pin current: Ix(u3:2)
 Ignoring empty pin current: Ix(u4:1)
 Ignoring empty pin current: Ix(u4:2)
 
-Date: Fri Mar 11 23:18:02 2022
+Date: Sat Mar 12 02:15:53 2022
 Total elapsed time: 0.078 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 2057
-traniter = 2054
-tranpoints = 1014
-accept = 965
-rejected = 49
-matrix size = 32
-fillins = 12
+totiter = 1996
+traniter = 1993
+tranpoints = 980
+accept = 940
+rejected = 40
+matrix size = 31
+fillins = 15
 solver = Normal
-Matrix Compiler1: 1.23 KB object code size  0.7/0.4/[0.2]
-Matrix Compiler2: 1.96 KB object code size  0.4/0.6/[0.3]
+Matrix Compiler1: 1.30 KB object code size  0.5/0.2/[0.2]
+Matrix Compiler2: 1.98 KB object code size  0.2/0.4/[0.2]
 

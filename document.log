@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.3.7)  11 MAR 2022 23:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.3.7)  12 MAR 2022 02:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -335,11 +335,7 @@ tex.def
 File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count285
 \l__pdf_internal_box=\box54
-) (document.aux
-
-LaTeX Warning: Label `ColorRecognition' multiply defined.
-
-)
+) (document.aux)
 \openout1 = `document.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
@@ -369,15 +365,15 @@ LaTeX Font Info:    ... okay on input line 20.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(28.45274pt, 540.60239pt, 28.45274pt)
-* v-part:(T,H,B)=(34.14322pt, 776.7604pt, 34.14322pt)
+* h-part:(L,W,R)=(22.76228pt, 551.9833pt, 22.76228pt)
+* v-part:(T,H,B)=(28.45274pt, 782.45088pt, 34.14322pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=540.60239pt
-* \textheight=776.7604pt
-* \oddsidemargin=-43.81725pt
-* \evensidemargin=-43.81725pt
-* \topmargin=-75.12677pt
+* \textwidth=551.9833pt
+* \textheight=782.45088pt
+* \oddsidemargin=-49.5077pt
+* \evensidemargin=-49.5077pt
+* \topmargin=-80.81725pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -467,18 +463,12 @@ File: imagens/diodo_polarizado_reversamente.jpg Graphic file (type jpg)
 <use imagens/diodo_polarizado_reversamente.jpg>
 Package pdftex.def Info: imagens/diodo_polarizado_reversamente.jpg  used on inp
 ut line 30.
-(pdftex.def)             Requested size: 151.31647pt x 97.11356pt.
-
-Underfull \vbox (badness 2556) has occurred while \output is active []
-
+(pdftex.def)             Requested size: 100.87508pt x 64.74072pt.
 <imagens/passive_vs_active.png, id=4, 717.68124pt x 922.44624pt>
 File: imagens/passive_vs_active.png Graphic file (type png)
 <use imagens/passive_vs_active.png>
-Package pdftex.def Info: imagens/passive_vs_active.png  used on input line 55.
-(pdftex.def)             Requested size: 172.24701pt x 221.39162pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Package pdftex.def Info: imagens/passive_vs_active.png  used on input line 49.
+(pdftex.def)             Requested size: 157.89035pt x 202.9388pt.
 
 [1{C:/Users/assis/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
@@ -488,62 +478,67 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.61 	
-       <./imagens/diodo_polarizado_reversamente.jpg>]
-<imagens/ccd.jpg, id=22, 497.86pt x 259.97125pt>
-File: imagens/ccd.jpg Graphic file (type jpg)
-<use imagens/ccd.jpg>
-Package pdftex.def Info: imagens/ccd.jpg  used on input line 64.
-(pdftex.def)             Requested size: 248.92938pt x 129.9853pt.
-<imagens/passive-pixel.jpg, id=24, 429.10312pt x 253.69781pt>
-File: imagens/passive-pixel.jpg Graphic file (type jpg)
-<use imagens/passive-pixel.jpg>
-Package pdftex.def Info: imagens/passive-pixel.jpg  used on input line 74.
-(pdftex.def)             Requested size: 240.2961pt x 142.0698pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-<imagens/cmos_3t.jpg, id=25, 1007.4pt x 1362.2895pt>
-File: imagens/cmos_3t.jpg Graphic file (type jpg)
-<use imagens/cmos_3t.jpg>
-Package pdftex.def Info: imagens/cmos_3t.jpg  used on input line 87.
-(pdftex.def)             Requested size: 120.88278pt x 163.46768pt.
- [2
+l.58 	
+      
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.92 	
-      
+l.58 	
+       <./imagens/diodo_polarizado_reversamente.jpg> <./imagens/passive_vs_acti
+ve.png>]
+<imagens/ccd.jpg, id=23, 497.86pt x 259.97125pt>
+File: imagens/ccd.jpg Graphic file (type jpg)
+<use imagens/ccd.jpg>
+Package pdftex.def Info: imagens/ccd.jpg  used on input line 64.
+(pdftex.def)             Requested size: 224.03493pt x 116.98598pt.
+<imagens/passive-pixel.jpg, id=25, 429.10312pt x 253.69781pt>
+File: imagens/passive-pixel.jpg Graphic file (type jpg)
+<use imagens/passive-pixel.jpg>
+Package pdftex.def Info: imagens/passive-pixel.jpg  used on input line 74.
+(pdftex.def)             Requested size: 214.55103pt x 126.84859pt.
+<imagens/cmos_3t.jpg, id=26, 1007.4pt x 1362.2895pt>
+File: imagens/cmos_3t.jpg Graphic file (type jpg)
+<use imagens/cmos_3t.jpg>
+Package pdftex.def Info: imagens/cmos_3t.jpg  used on input line 87.
+(pdftex.def)             Requested size: 90.66208pt x 122.60075pt.
+ [2
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.92 	
-      
+l.97 	O
+       utras funÃ§Ãµes como linhas compartilhadas, 4 e 8 caminhos compartilh...
+
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.92 	
-      
+l.97 	O
+       utras funÃ§Ãµes como linhas compartilhadas, 4 e 8 caminhos compartilh...
+
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.92 	
-       <./imagens/passive_vs_active.png> <./imagens/ccd.jpg> <./imagens/passive
--pixel.jpg> <./imagens/cmos_3t.jpg>]
+l.97 	O
+       utras funÃ§Ãµes como linhas compartilhadas, 4 e 8 caminhos compartilh...
+ <./imagens/ccd.jpg> <./imagens/passive-pixel.jpg> <./imagens/cmos_3t.jpg>]
 <imagens/pixel_simulado.png, id=41, 622.57594pt x 490.08093pt>
 File: imagens/pixel_simulado.png Graphic file (type png)
 <use imagens/pixel_simulado.png>
 Package pdftex.def Info: imagens/pixel_simulado.png  used on input line 121.
-(pdftex.def)             Requested size: 161.86592pt x 127.41803pt.
-<imagens/matriz_simulada.png, id=43, 518.6878pt x 413.29407pt>
+(pdftex.def)             Requested size: 186.77422pt x 147.0254pt.
+<imagens/matriz_simulada.png, id=43, 613.54219pt x 496.10344pt>
 File: imagens/matriz_simulada.png Graphic file (type png)
 <use imagens/matriz_simulada.png>
 Package pdftex.def Info: imagens/matriz_simulada.png  used on input line 129.
-(pdftex.def)             Requested size: 207.47144pt x 165.31468pt.
+(pdftex.def)             Requested size: 263.818pt x 213.32031pt.
+<imagens/timings.png, id=44, 1028.34187pt x 481.8pt>
+File: imagens/timings.png Graphic file (type png)
+<use imagens/timings.png>
+Package pdftex.def Info: imagens/timings.png  used on input line 139.
+(pdftex.def)             Requested size: 265.30704pt x 124.30197pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -552,90 +547,118 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.132 
-       <./imagens/pixel_simulado.png>]
-<imagens/timings.png, id=54, 1028.34187pt x 481.8pt>
-File: imagens/timings.png Graphic file (type png)
-<use imagens/timings.png>
-Package pdftex.def Info: imagens/timings.png  used on input line 137.
-(pdftex.def)             Requested size: 265.30704pt x 124.30197pt.
-<imagens/descarga.png, id=55, 940.26282pt x 483.30562pt>
+l.142 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.142 
+       <./imagens/pixel_simulado.png> <./imagens/matriz_simulada.png>]
+<imagens/descarga.png, id=57, 952.30782pt x 481.8pt>
 File: imagens/descarga.png Graphic file (type png)
 <use imagens/descarga.png>
-Package pdftex.def Info: imagens/descarga.png  used on input line 145.
-(pdftex.def)             Requested size: 263.27179pt x 135.32465pt.
-
-Underfull \vbox (badness 1748) has occurred while \output is active []
-
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 15
-8.
+Package pdftex.def Info: imagens/descarga.png  used on input line 147.
+(pdftex.def)             Requested size: 266.64436pt x 134.90308pt.
+<imagens/saida.png, id=58, 1028.34187pt x 483.30562pt>
+File: imagens/saida.png Graphic file (type png)
+<use imagens/saida.png>
+Package pdftex.def Info: imagens/saida.png  used on input line 155.
+(pdftex.def)             Requested size: 263.25148pt x 123.72433pt.
+<imagens/filtro_bayer.png, id=60, 177.66376pt x 150.5625pt>
+File: imagens/filtro_bayer.png Graphic file (type png)
+<use imagens/filtro_bayer.png>
+Package pdftex.def Info: imagens/filtro_bayer.png  used on input line 168.
+(pdftex.def)             Requested size: 71.06424pt x 60.22392pt.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 17
+6.
 
 (C:\Users\assis\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Underfull \hbox (badness 4792) in paragraph at lines 158--159
+Underfull \hbox (badness 7081) in paragraph at lines 176--177
 []\T1/ptm/m/n/10 Spectral Ins-tru-ments, Inc. What is a CCD?, Dis-po-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
 \T1/ptm/m/n/10 ní-vel em: []$\T1/pcr/m/n/10 https : / / specinstcameras . com /
 
  []
 
 
-Underfull \hbox (badness 7291) in paragraph at lines 162--163
-[]\T1/ptm/m/n/10 ACTIVE-pixel sen-sor. In:WIKIPÉDIA: a en-ci-clo-pé-dia
+Underfull \hbox (badness 1721) in paragraph at lines 180--181
+[]\T1/ptm/m/n/10 ACTIVE-pixel sen-sor. In:WIKIPÉDIA: a en-ci-clo-pé-dia li-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
+Underfull \hbox (badness 2435) in paragraph at lines 180--181
+\T1/ptm/m/n/10 vre. Wi-ki-me-dia, 2006. Dis-po-ní-vel em: []$\T1/pcr/m/n/10 htt
+ps : / / en .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
 \T1/pcr/m/n/10 wikipedia . org / wiki / Active-[]pixel _ sensor$[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--165
+Underfull \hbox (badness 10000) in paragraph at lines 182--183
 \T1/pcr/m/n/10 cern . ch / lecture _ activepixelsensors . html$[]\T1/ptm/m/n/10
  .
  []
 
+
+Underfull \hbox (badness 4792) in paragraph at lines 184--185
+\T1/pcr/m/n/10 www . youtube . com / watch ? v = LWxu4rkZBLw$[]\T1/ptm/m/n/10 .
+ Acesso
+ []
+
+
+Underfull \hbox (badness 1237) in paragraph at lines 190--191
+[]\T1/ptm/m/n/10 Vishay Se-mi-con-duc-tors, ``BPW34, BPW34S: Si-li-con PIN
+ []
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 192--193
+\T1/ptm/m/n/10 site. Dis-po-ní-vel em: []$\T1/pcr/m/n/10 https : / / tools . an
+alog . com /
+ []
+
 [4
-pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.177 \end{document}
-                    
 pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.177 \end{document}
+l.197 \end{document}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.177 \end{document}
+l.197 \end{document}
                     
-pdfTeX warning (ext4): destination with the same identifier (name{cite.ColorRec
-ognition}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) h
+as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.177 \end{document}
-                     <./imagens/matriz_simulada.png> <./imagens/timings.png> <.
-/imagens/descarga.png>] (document.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
+l.197 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.197 \end{document}
+                     <./imagens/timings.png> <./imagens/descarga.png> <./imagen
+s/saida.png> <./imagens/filtro_bayer.png>] (document.aux)
 Package rerunfilecheck Info: File `document.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 11373 strings out of 478659
- 180832 string characters out of 2845921
- 511343 words of memory out of 3000000
- 29256 multiletter control sequences out of 15000+600000
+ 11393 strings out of 478659
+ 181225 string characters out of 2845921
+ 509364 words of memory out of 3000000
+ 29270 multiletter control sequences out of 15000+600000
  433950 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,8n,63p,1021b,346s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -649,9 +672,9 @@ s/type1/urw/courier/ucrr8a.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fo
 nts/type1/urw/times/utmb8a.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fo
 nts/type1/urw/times/utmr8a.pfb><C:/Users/assis/AppData/Local/Programs/MiKTeX/fo
 nts/type1/urw/times/utmri8a.pfb>
-Output written on document.pdf (4 pages, 411335 bytes).
+Output written on document.pdf (4 pages, 437648 bytes).
 PDF statistics:
- 135 PDF objects out of 1000 (max. 8388607)
- 34 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 148 PDF objects out of 1000 (max. 8388607)
+ 38 named destinations out of 1000 (max. 500000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
