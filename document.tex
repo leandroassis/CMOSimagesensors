@@ -2,7 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{times}
-\usepackage[left=1cm,top=1.5cm,right=1cm,bottom=1.5cm]{geometry}
+\usepackage[left=1cm,top=1.2cm,right=1cm,bottom=1.2cm]{geometry}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{makeidx}
@@ -14,7 +14,7 @@
 \title{\textbf{Diodos aplicados à sensores digitais de imagem}}
 \author{Leandro Assis dos Santos}
 
-\linespread{0.9}
+\linespread{0.8}
 \setlength{\parskip}{0.05cm}
 
 \begin{document}
@@ -23,9 +23,7 @@
 \section*{Introdução}
 		Sensores digitais de imagem são sensores que transdutam a intensidade luminosa incidente sobre eles em sinais elétricos analizáveis por um sistema computacional. Esses sensores são usados em imagens eletrônicas aplicadas a diversos dispositivos como câmeras digitais, mouses ópticos, equipamentos de imagem médica, equipamentos de visão noturna e térmica, LIDARs (Light Detection and Ranging), dentre outros.
 				
-		Os sensores de imagem são feitos de fótodiodos, que é um tipo de diodo construído de forma a possibilitar a utilização da incidência de luz como fator determinante no controle da corrente elétrica, e um ou mais transistores ativos. Ou seja, os fótons incidentes sobre o sensor interagem com o fótodiodo para mover elétrons de forma proporcional ao aumento da intensidade luminosa no cristal, juntamente a isso os transistores atuam de forma programada, como será visto mais a frente, a fim de registrar a imagem,. Os sensores modernos de imagem utilizam da exploração desse efeito fotoelétrico concomitantemente da característica capacitiva que junções pn em polarização reversa (fótodiodos em polarização reversa) possuem. 
-		
-		Em resumo, ao polarizar um diodo reversamente com uma fonte de tensão $V_{R}$ (Figura 1), o campo elétrico interno da junção pn que constitui o diodo é reforçado. Por conta disso, a barreira de potencial se fortalece e mais íons (de ambos, aceitadores e doadores) ficam expostos. Devido ao campo induzido pelo terminal negativo da fonte $V_{R}$, as lacunas da região p são atraídas para o extremo do ânodo do diodo, e de forma similar (mas por conta do campo induzido pelo terminal positivo) os elétrons são atraídos para o extremo do cátodo do diodo.
+		Em resumo a aplicação de diodos em cameras digitais é possível pois, ao polarizar um diodo reversamente com uma fonte de tensão $V_{R}$ (Figura 1), o campo elétrico interno da junção pn que constitui o diodo é reforçado. Por conta disso, a barreira de potencial se fortalece e mais íons (de ambos, aceitadores e doadores) ficam expostos. Devido ao campo induzido pelo terminal negativo da fonte $V_{R}$, as lacunas da região p são atraídas para o extremo do ânodo do diodo, e de forma similar (mas por conta do campo induzido pelo terminal positivo) os elétrons são atraídos para o extremo do cátodo do diodo.
 		
 		\begin{figure}[!h]
 			\centering
@@ -45,8 +43,6 @@
 		Os CCDs fabricados na época sofriam de distorções causadas pelo atraso do obturador das câmeras. Distorções que foram resolvidade apenas em 1980 quando surgiu um dispositivo que viria a ser o fator chave para os sensores CMOS modernos, o fótodiodo ``fixado'' (do inglês PPD - Pinned PhotoDiode) inventado por Nobukazu Teranishi, Hiromitsu Shiraki e Yasuo Ishihara. O diferencial desse componente em relação aos demais é o baixo \textit{lag}, baixo ruído, alta eficiência quântica (taxa de conversão de fótons em elétrons) e baixa corrente quando aplicado a pouca luminosidade. A partir de 1987, os PPDs começaram a ser incorporados na maioria dos sensores CCDs, e desde então são usados em todos os sensores CCD e CMOS.
 		
 		A tecnologia base para os pixels de sensores CMOS foi inventada pela Olympus em meados dos anos 80. Essa tecnologia foi possibilitada pelos avanços na tecnologia de fabricação de semicondutores MOS, com MOSFETs atingindo escalas de microns e submicrons de tamanho. O primeiro sensor ``parente'' dos sensores CMOS foi fabricado por Tsutomu Nakamura e sua equipe em 1985 utilizando transistores NMOS. Posteriormente, os sensores CMOS como conhecido hoje foi desenvolvido por Eric Fossum e sua equipe nos laboratórios da NASA em 1993.
-	
-		Apesar dos sensores CCDs terem sido pioneiros no ramo de medição científica nos anos 80 e se tornado o sensor de escolha para praticamente toda aplicação de imagens nesta época, o desenvolvimento de sensores CMOS atingiu um ponto em que começou a substituir os sensores CCDs a partir de 2007. Com o passar do tempo os sensores de tecnologia CMOS se expandiram mais ainda enquanto os de tecnologia CCD estagnaram, resultando na substituição praticamente completa dos CCDs por sensores CMOS na maioria das aplicações em 2010. De forma geral ainda hoje ambos os dispositivos são utilizados de acordo com a necessidade da aplicação.
 		
 	\subsubsection*{Sensores de Pixel Passivo - PPS} 
 		Os precursores dos sensores APS foram os PPS (do inglês, passive-pixel sensor), um tipo de matriz de pixels formada por fótodiodos e uma chave MOSFET, que consiste em ``pixels passivos'' sem amplificação, ou seja, essa configuração de pixel transfere diretamente o sinal acumulado para fora do pixel. Nesses sensores cada pixel possui uma junção pn, capacitor integrado e transistores de seleção. Essa configuração de pixels passivos foi proposta por G. Weckler em 1968 e antecedeu a criação dos CCDs. Os PPS sofrem de diversas limitações como alto ruído, baixo tempo de leitura e dificuldade de escalabilidade. De forma geral, os sensores CCDs possuem matrizes de pixels passivos.
@@ -120,14 +116,38 @@
 		
 	Para fazer a simulação foi utilizado o \textit{software} LTSpice a fim de fazer um análise \textit{Time Domain}. Infelizmente esse \textit{software} não despõem originalmente de fótodiodos e simulações de parâmetros de luminosidade. Para contornar isso, foi utilizada a ferramenta \cite{photodiode} para gerar um circuito equivalente de um fótodiodo polarizado reversamente. Dentre as configurações dessa ferramenta, escolheu-se a opção de gerar um circuito equivalente ao fótodiodo BPW34S \cite{BPW34} polarizado reversamente por uma tensão de 3.3 V, e com corrente de 45 nA induzida pelo fluxo de fótons durante o período de integração, que consiste em uma fonte de corrente, uma resistência $R_{sh}$ - resistência que aplicada sob a tensão da fonte gera a pequena ``corrente escura"" (\textit{Dark current}) característica do fótodiodo em polarização reversa -, e um capacitor $C_{j}$ equivalente a capacitância do fótodiodo em polarização reversa.
 	
-	Além disso, os transistores MOSFET $M_{rst}$ e $M_{sel}$ foram substituídos pelo componente ``switch'' (nomeado como sw), e o $M_{sf}$ foi substituído por um amplificador operacional na configuração não inversora que amplifica a tensão para o range de 0 à 5 V. Essas substituições foram feitas a fim de evitar o uso desses transistores não abordados na disciplica de Eletrônica I. A seguir é apresentado o pixel construído para a simulação.
-		
-	\begin{figure}[!h]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.26]{imagens/pixel_simulado.png}
 		\caption{Pixel CMOS 3T no LTSpice.}
 	\end{figure}
 	
+	Além disso, os transistores MOSFET $M_{rst}$ e $M_{sel}$ foram substituídos pelo componente ``switch'' (nomeado como sw), e o $M_{sf}$ foi substituído por um amplificador operacional na configuração não inversora que amplifica a tensão para o range de 0 à 5 V. Essas substituições foram feitas a fim de evitar o uso desses transistores não abordados na disciplina de Eletrônica I. A seguir, nas Figura 6 e 7, respectivamente, são apresentados o pixel e o sensor CMOS construídos para a simulação.
+	
+	\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{imagens/matriz_simulada.png}
+	\caption{Matriz de pixels CMOS 3T no LTSpice.}	
+	\end{figure}
+
+	Para a simulação, o acionamento do ``transistor'' de \textit{reset} é feito seguindo a técnica de \textit{global shutter}, ou seja, todos os pixels são resetados ao mesmo tempo antes da exposição à luminosidade. Após o \textit{reset} de todos os pixel simultaneamente e o tempo de integração, inicia-se a leitura de cada pixel linha a linha ao acionar o ``transistor'' de seleção de cada pixel de forma ordenada. O digrama de \textit{timing} do circuito está ilustrado na Figura 8.
+	
+	\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.258]{imagens/timings.png}
+	\caption{Diagrama de \textit{timings} do acionamento dos ``transistores''.}
+	\end{figure}
+
+	Durante o tempo de integração, os fótodiodos são expostos à luz e se descarregam proporcionalmente à corrente induzida pela intensidade luminosa sobre cada pixel. Para simular esse efeito cada pixel da matriz na Figura 7 possui uma corrente de drenagem diferente, produzindo o seguinte gráfico de tensão na saída dos ``fótodiodos''.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.28]{imagens/descarga.png}
+		\caption{Descarga dos capacitores causada pela exposição à luz.}
+	\end{figure}
+
+	A tensão acumulada no cátodo do ``fótodiodo'' após o tempo de integração é direcionada para o bloco de amplificação, e posteriormente é direcionada para a saída do sensor CMOS durante o respectivo intervalo de leitura. Na Figura 10 é apresentada a saída da sensor após uma fotografia.
+		
 	\subsection*{Resultados obtidos}
 	 Embora as modificações em relação ao circuito original de um sensor CMOS-3T facilitem mais ainda a montagem do mesmo, elas também adicionam problemas ao circuito como ruído e a necessidadade de trabalhar com tensões, correntes e tempos de operação diferentes dos empregados na prática. Entretanto, apesar dos problemas criados pelas substituições de componentes feitas, os resultados obtidos são aceitáveis por conta do caráter puramente ilustrativo dessa simulação.
 	
