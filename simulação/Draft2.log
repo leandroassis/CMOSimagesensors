@@ -28,7 +28,7 @@ Ignoring empty pin current: Ix(u3:2)
 Ignoring empty pin current: Ix(u4:1)
 Ignoring empty pin current: Ix(u4:2)
 
-Date: Sat Mar 12 02:15:53 2022
+Date: Sat Mar 12 02:38:44 2022
 Total elapsed time: 0.078 seconds.
 
 tnom = 27
@@ -42,6 +42,6 @@ rejected = 40
 matrix size = 31
 fillins = 15
 solver = Normal
-Matrix Compiler1: 1.30 KB object code size  0.5/0.2/[0.2]
-Matrix Compiler2: 1.98 KB object code size  0.2/0.4/[0.2]
+Matrix Compiler1: 1.30 KB object code size  0.6/0.2/[0.2]
+Matrix Compiler2: 1.98 KB object code size  0.2/0.3/[0.2]
 
